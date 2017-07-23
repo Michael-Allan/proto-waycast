@@ -1,0 +1,68 @@
+
+    <h1>Michael Allan’s wayrepo</h1>
+    <!-- ^^^ HERE UP CUSTOM ^^^ -->
+
+    <section>
+        <!-- copied in: ~/project/_autoindex-summary.html  ||| HERE CUSTOM ||| -->
+        <p>
+            This is my wayrepo
+            — a repository of files that encode my public expressions in regard to personal goals
+            — a frame of self expression, a medium of interpersonal exchange,
+              and the structural heart of a dispersive technique of communication
+              that I call ‘waycasting’.
+            </p>
+        </section>
+
+    <!-- ___ HERE DOWN CUSTOM ___ -->
+    <section>
+        <h2>Different views of this wayrepo</h2>
+        <ul>
+            <li><a href='http://reluk.ca/project/wayrepo/'>Browseable web content</a></li>
+            <li><a href='https://github.com/Michael-Allan/wayrepo/'>Browseable revision history</a></li>
+            <li>
+                Bare clones
+                (<a href='http://reluk.ca/var/repo/git/wayrepo.git'>reluk.ca</a>,
+                 <a href='https://github.com/Michael-Allan/wayrepo.git'>github.com</a>)
+                </li>
+            </ul>
+        </section>
+    <section>
+        <h2>Other resources for waycasting</h2>
+        <ul>
+            <li><a href='http://reluk.ca/project/waycasting/'>Tools</a> (none there yet)</li>
+            </ul>
+        </section>
+    <script>
+        ( function()
+        {
+
+            /** Amends this file’s content when it’s served from my own web site.
+              */
+            function amendSelfLinks( body )
+            {
+                var walker = document.createTreeWalker( body, /*whatToShow*/NodeFilter.SHOW_ELEMENT,
+                  /*filter*/null ); // though createTreeWalker is missing in early versions of IE 9
+                if( !walker ) return;
+
+                for( ;; )
+                {
+                    var e = walker.nextNode();
+                    if( !e ) break;
+
+                    if( e.localName != 'a' || e.href != 'http://reluk.ca/project/wayrepo/' ) continue;
+
+                    var parent = e.parentNode;
+                    var text = e.firstChild;
+                    parent.replaceChild( text, e ); // remove self-link <a>, leaving text
+                    text.appendData( ' (top of this page)' );
+                }
+            }
+
+        ////////////////////
+
+         // if( document.URL.startsWith( 'http://reluk.ca/project/wayrepo' )) amendSelfLinks( document.body );
+         /// IE 9 can't do startsWith, so:
+            if( document.URL.indexOf('http://reluk.ca/project/wayrepo') == 0) amendSelfLinks( document.body );
+
+        }());
+        </script>
