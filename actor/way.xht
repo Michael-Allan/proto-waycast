@@ -1,35 +1,59 @@
 <!DOCTYPE html>
-<html xmlns='http://www.w3.org/1999/xhtml' lang='en-CA' xml:lang='en-CA'>
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:cog='data:,wayscript.cog' lang='en-CA' xml:lang='en-CA'>
     <head>
         <link rel='license' href='http://creativecommons.org/publicdomain/zero/1.0/'/> <!-- This file
           has been dedicated to the public domain under a CC0 licence.  Further details at bottom. -->
+        <link rel='stylesheet' href='http://reluk.ca/project/way/xht/rend/readable.css'/> <!-- HERE CUSTOM -->
         <meta charset='UTF-8'/>
         <title>The steps I am taking now</title>
+        <cog:repo href='..'/>
         </head>
     <body>
-        <way:script xmlns:way='data:,wayscript'>
-            <!-- <<< deindent -->
-
-                                                                       <!-- ___ HERE DOWN CUSTOM ___ -->
-<way:act way:step='/engineer/software/way/#public_reading'/>
-<way:act way:step='/engineer/software/way/#backgrounding'/>
-                                                                       <!-- ^^^ HERE UP CUSTOM ^^^ -->
-<!-- Above I declare my steps.  Where a way:step attribute
-     resolves to a non-step, it means doing something in
-     connection with that non-step. -->
+        <!-- <<< deindent -->
 
 
-            <!-- >>> reindent -->
-            </way:script>
+                                                                               <!-- HERE DOWN CUSTOM -->
+<cog:act cog:step='/engineer/software/way/#public_reading'/>
+<cog:act cog:step='/engineer/software/way/#backgrounding'/>
+                                                                                 <!-- HERE UP CUSTOM -->
+<!-- Above I declare my steps.  Where a cog:step attribute resolves to a
+  non-step, it means doing something in connection with that non-step. -->
+<!--- - - - -                                                                       HERE DOWN CUSTOM
+- new requirements for /actor/
+    - easy specification of steps
+        - no identifier injection
+        - no XPath
+        - how
+            | custom-like insertion in wayscript
+                - using markup of a new type
+                    - markup that is uniquely personal
+                        - yet need not be marked CUSTOM because it's always so
+    - immediately visible in wayrepo
+        - as now
+        ? how
+            - given that it kind of contradicts the other requirement (easy specification of steps)
+            | indicate only the actioned files there
+                - pro
+                    - allows for efficient rendering
+                - con
+                    - redundant
+            | encode nothing there
+                - it's just an informative placeholder
+    - - - -                                                                           HERE UP CUSTOM -->
+
+
+
+        <!-- >>> reindent -->
+        <script src='http://reluk.ca/project/way/xht/rend/readable.js'/> <!-- HERE CUSTOM -->
         </body>
     </html>
 
-<!-- This file has been dedicated by its author(s) to the public domain.  To the extent possible by law,
-     the author(s) have waived all of their copyright and related or neighbouring rights to this file
-     under the terms of CC0 1.0.  http://creativecommons.org/publicdomain/zero/1.0/
-     The author(s) are:
+<!-- This file has been dedicated by its author(s) to the public domain.  To the extent possible
+  by law, the author(s) have waived all of their copyright and related or neighbouring rights to
+  this file under the terms of CC0 1.0.  http://creativecommons.org/publicdomain/zero/1.0/
+  The author(s) are:
 
-         Michael Allan, mike@reluk.ca, http://reluk.ca/
+      Michael Allan, mike@reluk.ca, http://reluk.ca/
 
-     Other authors who make further, substantial contributions to this file, and who wish to dedicate
-     their contributions to the public domain, should append their names to the list above. -->
+  Other authors who make further, substantial contributions to this file, and who wish to dedicate
+  their contributions to the public domain, should append their names to the list above. -->

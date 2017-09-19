@@ -1,45 +1,41 @@
 <!DOCTYPE html>
-<html xmlns='http://www.w3.org/1999/xhtml' lang='en-CA' xml:lang='en-CA'>
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:cog='data:,wayscript.cog' lang='en-CA' xml:lang='en-CA'>
     <head>
         <link rel='license' href='http://creativecommons.org/publicdomain/zero/1.0/'/> <!-- This file
           has been dedicated to the public domain under a CC0 licence.  Further details at bottom. -->
+        <link rel='stylesheet' href='http://reluk.ca/project/way/xht/rend/readable.css'/> <!-- HERE CUSTOM -->
         <meta charset='UTF-8'/>
+        <cog:repo href='..'/>
         <title>Planning my life’s work</title>
         </head>
-    <body>
-        <p> <!-- ___ HERE DOWN CUSTOM ___ -->
-            This file isn’t web-readable yet because I’m still working with the way files in mere source form.
-            Please view the source if you want to see what the content properly looks like.
-            Here’s <a href='http://reluk.ca/project/way/script/emacs/wayscript_in_editor.png'>
-            what wayscript looks like</a> to me, for example.
-            </p> <!-- ^^^ HERE UP CUSTOM ^^^ -->
-        <way:script xmlns:way='data:,wayscript' xmlns:html='http://www.w3.org/1999/xhtml'
-                        xmlns='data:,wayscript.bit'
-                   xmlns:step='data:,wayscript.bit.step'>
-            <!-- <<< deindent -->
+    <html:body xmlns='data:,wayscript.bit' xmlns:html='http://www.w3.org/1999/xhtml'
+          xmlns:step='data:,wayscript.bit.step'>
+        <!-- <<< deindent -->
 
-<step:_>
+
+
+<step:_ cog:lid='institute_virtue'>
     Institute a virtue
-    <way:including> thereby
+    <cog:including> thereby
         <meansward>
             To the gift giver, my worthiness shown
-            <by way:link='/human/fear/#worthy_by_gratitude'>
+            <by cog:link='/human/fear/#worthy_by_gratitude'>
                 Properly expressing my gratitude for the gift of practical reason
                 </by>
-            <by way:link='/human/fear/#worthy_by_competence'>
+            <by cog:link='/human/fear/#worthy_by_competence'>
                 Proving myself equal to the task of holding on to practical reason
-                <by way:link='#instituting_a_means'/>
+                <by cog:link='#instituting_a_means'/>
                 </by>
-            <way:including> thereby
+            <cog:including> thereby
                 <endward>
                     To my endmost goal, the gift extended
-                    <by way:lid='instituting_a_means'>
+                    <by cog:lid='instituting_a_means'>
                         Instituting what appears a viable means to my endmost goal
-                        <by way:link='/theorist/ethics/normative_ethic/#instrumental_to_M'>
+                        <by cog:link='/theorist/ethics/normative_ethic/#instrumental_to_M'>
                             Instituting what appears a viable means to the final end E
                             <by>
                                 Instituting the forms G and F
-                                <by way:link='/theorist/ethics/normative_ethic/#virtue'>
+                                <by cog:link='/theorist/ethics/normative_ethic/#virtue'>
                                     Virtue’s inclusion of the forms G and F
                                     </by>
                                 </by>
@@ -49,66 +45,68 @@
                             </by>
                         </by>
                     </endward>
-                </way:including>
-            <motive way:link='/human/fear/'>Fear</motive>
+                </cog:including>
+            <motive cog:link='/human/fear/#insight'>Fear</motive>
             </meansward>
-        </way:including>
-    <way:loop id='repo_institution'>
+        </cog:including>
+    <cog:loop id='repo_institution'>
         Institute the wayrepo
         <step:correct>
             Script a correction
             <step:sense>
                 Experience a fault in the way
-                <way:including>, as it may happen
-                    <step:provide way:lid='impedance_detection_on_repo'>
-                        Detect an impedance of virtue by the wayrepo
+                <cog:including>, as it may happen
+                    <step:provide cog:lid='impedance_detection_on_repo'>
+                        Detect an impedance  of virtue by the wayrepo
                         </step:provide>
-                    <step:provide way:lid='impedance_detection_on_institution'>
+                    <step:provide cog:lid='impedance_detection_on_institution'>
                         Detect an impedance of virtue in the institution of the wayrepo
                         </step:provide>
-                    </way:including>
+                    </cog:including>
                 <step:conform>
                     Use the wayrepo fully and truly in its current form
-                    <requirement way:link='/engineer/software/way/#repo_conformant'/>
+                    <requirement cog:link='/engineer/software/way/#repo_conformant'/>
                     <step:activate>
                         <html:a href='../actor/way.xht'>Actively step</html:a> through the way
                         </step:activate>
                     </step:conform>
                 </step:sense>
             </step:correct>
-        </way:loop>
-    <constraint id='virtue_conformant_repo' way:link='/theorist/ethics/normative_ethic/#virtue'>
+        </cog:loop>
+    <constraint id='virtue_conformant_repo' cog:link='/theorist/ethics/normative_ethic/#virtue'>
         The wayrepo keeps the form of virtue
         <G>
             The wayrepo keeps form G
-            <requirement way:link='/engineer/software/way/repo/#ever_G'/>
+            <requirement cog:link='/engineer/software/way/repo/#ever_G'/>
             </G>
         <F>
             The wayrepo keeps form F
-            <requirement way:link='/engineer/software/way/repo/#ever_F'/>
+            <requirement cog:link='/engineer/software/way/repo/#ever_F'/>
             </F>
         <let_GF>
             The wayrepo avoids impeding a virtue
-            <step:require way:link='impedance_detection_on_repo'/>
+            <step:required cog:link='#impedance_detection_on_repo'/>
             </let_GF>
         </constraint>
-    <constraint way:link='/theorist/ethics/normative_ethic/#let_GF'>
+    <constraint cog:link='/theorist/ethics/normative_ethic/#let_GF'>
         The institution of the wayrepo avoids impeding a virtue
-        <step:require way:link='impedance_detection_on_institution'/>
+        <step:required cog:link='#impedance_detection_on_institution'/>
         </constraint>
     </step:_>
 
-            <!-- >>> reindent -->
-            </way:script>
-        </body>
+
+
+        <!-- >>> reindent -->
+        <html:script src='http://reluk.ca/project/way/xht/rend/readable.js'/> <!-- HERE CUSTOM -->
+        </html:body>
     </html>
 
-<!-- This file has been dedicated by its author(s) to the public domain.  To the extent possible by law,
-     the author(s) have waived all of their copyright and related or neighbouring rights to this file
-     under the terms of CC0 1.0.  http://creativecommons.org/publicdomain/zero/1.0/
-     The author(s) are:
+<!-- This file has been dedicated by its author(s) to the public domain.  To the extent possible
+  by law, the author(s) have waived all of their copyright and related or neighbouring rights to
+  this file under the terms of CC0 1.0.  http://creativecommons.org/publicdomain/zero/1.0/
+  The author(s) are:
 
-         Michael Allan, mike@reluk.ca, http://reluk.ca/
+      Michael Allan, mike@reluk.ca, http://reluk.ca/
 
-     Other authors who make further, substantial contributions to this file, and who wish to dedicate
-     their contributions to the public domain, should append their names to the list above. -->
+  Other authors who make further, substantial contributions to this file, and who wish to dedicate
+  their contributions to the public domain, should append their names to the list above. -->

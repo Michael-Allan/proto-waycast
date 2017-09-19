@@ -1,25 +1,26 @@
 <!-- This file has been dedicated to the public domain under a CC0 licence.  Further details at bottom.
-     This file uses Markdown-compatible HTML because link README.md targets it. -->
+  This file uses Markdown-compatible HTML because link README.md targets it. -->
 
-<h1>Michael Allan’s wayrepo</h1> <!-- ||| HERE CUSTOM ||| -->
+<h1>Michael Allan’s wayrepo</h1>                                                    <!-- HERE CUSTOM -->
 <section>
     <p>
         This is my wayrepo
-            <!-- personal property as per engineer/software/way/repo/#ever_F  ||| HERE CUSTOM ||| -->
+            <!-- personal property as per engineer/software/way/repo/#ever_F             HERE CUSTOM -->
         — a repository of files that encode my public expressions in regard to personal goals
-            <!-- as per engineer/software/way/repo/#public,                   ___ HERE DOWN CUSTOM ___
-                        engineer/software/way/repo/#goalward_recording        ^^^ HERE UP CUSTOM ^^^ -->
+            <!-- as per engineer/software/way/repo/#public,                         HERE DOWN CUSTOM
+                        engineer/software/way/repo/#goalward_recording                HERE UP CUSTOM -->
         — a frame of self expression, a medium of interpersonal exchange,
           and the structural heart of a dispersive technique of communication that I call ‘waycasting’.
-            <!-- see "focused and centered", http://reluk.ca/project/way      ||| HERE CUSTOM ||| -->
+            <!-- see "focused and centered", http://reluk.ca/project/way                 HERE CUSTOM -->
         </p>
     <p>
         You can think of waycasting in the way a programmer might:
         it’s like an interactive Greasemonkey for the ‘world computer’.
         The wayrepo is my user script and I can make it do anything I like.
-        <!-- copied to: ~/project/_autoindex-summary.html,                    ___ HERE DOWN CUSTOM ___
-             https://github.com/Michael-Allan/wayrepo                         ^^^ HERE UP CUSTOM ^^^ -->
+        <!-- copied to: ~/project/_autoindex-summary.html,                          HERE DOWN CUSTOM
+             https://github.com/Michael-Allan/wayrepo                                 HERE UP CUSTOM -->
         </p>
+    <!--
     <p>
         If you haven’t experienced it yet,
         then the thing to watch out for in the metaphor is the interactive part;
@@ -27,9 +28,10 @@
         but in the subjective, too, where its changes are felt immediately.
         So you won’t come out of it unchanged. — But then, neither will the objective world.
         </p>
+        this now seems unhelpful
+        -->
     </section>
-<!-- ___ HERE DOWN CUSTOM ___ -->
-<section>
+<section>                                                                      <!-- HERE DOWN CUSTOM -->
     <h2>Different views of this wayrepo</h2>
     <ul>
         <li><a href='http://reluk.ca/project/wayrepo/'>Browseable web content</a></li>
@@ -58,9 +60,8 @@
           */
         function amendSelfLinks( body )
         {
-            var walker = document.createTreeWalker( body, /*whatToShow*/NodeFilter.SHOW_ELEMENT,
-              /*filter*/null ); // though createTreeWalker is missing in early versions of IE 9
-            if( !walker ) return;
+            var walker = document.createTreeWalker( body, NodeFilter.SHOW_ELEMENT, /*custom filter*/null );
+            if( !walker ) return; // createTreeWalker is missing from early versions of IE 9
 
             for( ;; )
             {
@@ -82,16 +83,15 @@
      /// IE 9 can't do startsWith, so:
         if( document.URL.indexOf('http://reluk.ca/project/wayrepo') == 0) amendSelfLinks( document.body );
 
-    }());
-    </script>
-    <!-- ^^^ HERE UP CUSTOM ^^^ -->
+    }() );
+    </script>                                                                    <!-- HERE UP CUSTOM -->
 
-<!-- This file has been dedicated by its author(s) to the public domain.  To the extent possible by law,
-     the author(s) have waived all of their copyright and related or neighbouring rights to this file
-     under the terms of CC0 1.0.  http://creativecommons.org/publicdomain/zero/1.0/
-     The author(s) are:
+<!-- This file has been dedicated by its author(s) to the public domain.  To the extent possible
+  by law, the author(s) have waived all of their copyright and related or neighbouring rights to
+  this file under the terms of CC0 1.0.  http://creativecommons.org/publicdomain/zero/1.0/
+  The author(s) are:
 
-         Michael Allan, mike@reluk.ca, http://reluk.ca/
+      Michael Allan, mike@reluk.ca, http://reluk.ca/
 
-     Other authors who make further, substantial contributions to this file, and who wish to dedicate
-     their contributions to the public domain, should append their names to the list above. -->
+  Other authors who make further, substantial contributions to this file, and who wish to dedicate
+  their contributions to the public domain, should append their names to the list above. -->
