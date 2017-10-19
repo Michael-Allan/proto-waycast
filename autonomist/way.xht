@@ -3,9 +3,10 @@
     <head>
         <link rel='license' href='http://creativecommons.org/publicdomain/zero/1.0/'/> <!-- This file
           has been dedicated to the public domain under a CC0 licence.  Further details at bottom. -->
-        <link rel='stylesheet' href='http://reluk.ca/project/way/xht/rend/readable.css'/> <!-- HERE CUSTOM -->
+        <link rel='stylesheet' href='http://reluk.ca/project/ways/xht/rend/readable.css'/> <!-- HERE CUSTOM -->
+        <link rel='stylesheet' href='http://reluk.ca/project/ways/xht/rend/pre_note.css'/> <!-- HERE CUSTOM -->
         <meta charset='UTF-8'/>
-        <cog:repo href='..'/>
+        <cog:cast base='..'/>
         <title>Planning my life’s work</title>
         </head>
     <html:body xmlns='data:,wayscript.bit' xmlns:html='http://www.w3.org/1999/xhtml'
@@ -16,88 +17,57 @@
 
 <step:_ cog:lid='institute_virtue'>
     Institute a virtue
-    <cog:including> thereby
-        <meansward>
-            To the gift giver, my worthiness shown
-            <by cog:link='/human/fear/#worthy_by_gratitude'>
-                Properly expressing my gratitude for the gift of practical reason
-                </by>
-            <by cog:link='/human/fear/#worthy_by_competence'>
-                Proving myself equal to the task of holding on to practical reason
-                <by cog:link='#instituting_a_means'/>
-                </by>
-            <cog:including> thereby
-                <endward>
-                    To my endmost goal, the gift extended
-                    <by cog:lid='instituting_a_means'>
-                        Instituting what appears a viable means to my endmost goal
-                        <by cog:link='/theorist/ethics/normative_ethic/#instrumental_to_M'>
-                            Instituting what appears a viable means to the final end E
-                            <by>
-                                Instituting the forms G and F
-                                <by cog:link='/theorist/ethics/normative_ethic/#virtue'>
-                                    Virtue’s inclusion of the forms G and F
-                                    </by>
-                                </by>
-                            </by>
-                        <by>
-                            E’s inclusion of <html:a href='../visionary/way.xht'>my endmost goal</html:a>
-                            </by>
-                        </by>
-                    </endward>
-                </cog:including>
-            <motive cog:link='/human/fear/#insight'>Fear</motive>
-            </meansward>
-        </cog:including>
+    <_ι cog:link='/theorist/ethics/normative_ethic/#virtue'/>
     <cog:loop id='repo_institution'>
-        Institute the wayrepo
-        <step:correct>
+        Institute the waycast
+        <step:mend>
             Script a correction
-            <step:sense>
-                Experience a fault in the way
+            <step:fail>
+                Reach an impasse in the way
                 <cog:including>, as it may happen
-                    <step:provide cog:lid='impedance_detection_on_repo'>
-                        Detect an impedance  of virtue by the wayrepo
-                        </step:provide>
-                    <step:provide cog:lid='impedance_detection_on_institution'>
-                        Detect an impedance of virtue in the institution of the wayrepo
-                        </step:provide>
+                    <provision cog:lid='impedance_detection_on_cast'>
+                        Detection of any impedance of virtue by the waycast
+                        </provision>
+                    <provision cog:lid='impedance_detection_on_institution'>
+                        Detection of any impedance of virtue by the institution of the waycast
+                        </provision>
                     </cog:including>
-                <step:conform>
-                    Use the wayrepo fully and truly in its current form
-                    <requirement cog:link='/engineer/software/way/#repo_conformant'/>
-                    <step:activate>
-                        <html:a href='../actor/way.xht'>Actively step</html:a> through the way
-                        </step:activate>
-                    </step:conform>
-                </step:sense>
-            </step:correct>
+                <step:use>
+                    Use the waycast fully and truly in its latest form
+                    <requirement cog:link='/engineer/software/ways/#repo_conformant'/>
+                    <step:_>
+                        <html:a href='/actor/way.xht'>Actively step</html:a> through the way
+                        </step:_>
+                    </step:use>
+                </step:fail>
+            </step:mend>
         </cog:loop>
-    <constraint id='virtue_conformant_repo' cog:link='/theorist/ethics/normative_ethic/#virtue'>
-        The wayrepo keeps the form of virtue
+    <constraint id='virtue_conformant_cast' cog:link='/theorist/ethics/normative_ethic/#virtue'>
+        The waycast keeps the form of virtue
         <G>
-            The wayrepo keeps form G
-            <requirement cog:link='/engineer/software/way/repo/#ever_G'/>
+            The waycast keeps form G
+            <requirement cog:link='/engineer/software/ways/cast/#ever_G'/>
             </G>
         <F>
-            The wayrepo keeps form F
-            <requirement cog:link='/engineer/software/way/repo/#ever_F'/>
+            The waycast keeps form F
+            <requirement cog:link='/engineer/software/ways/cast/#ever_F'/>
             </F>
         <let_GF>
-            The wayrepo avoids impeding a virtue
-            <step:required cog:link='#impedance_detection_on_repo'/>
+            The waycast avoids impeding a virtue
+            <requirement cog:link='#impedance_detection_on_cast'/>
             </let_GF>
         </constraint>
-    <constraint cog:link='/theorist/ethics/normative_ethic/#let_GF'>
-        The institution of the wayrepo avoids impeding a virtue
-        <step:required cog:link='#impedance_detection_on_institution'/>
+    <constraint id='virtue_compat_inst'>
+        The institution of the waycast avoids impeding a virtue
+        <_>To gain one virtue at the cost of another is to risk a net loss</_>
+        <requirement cog:link='#impedance_detection_on_institution'/>
         </constraint>
     </step:_>
 
 
 
         <!-- >>> reindent -->
-        <html:script src='http://reluk.ca/project/way/xht/rend/readable.js'/> <!-- HERE CUSTOM -->
+        <html:script src='http://reluk.ca/project/ways/xht/rend/readable.js'/> <!-- HERE CUSTOM -->
         </html:body>
     </html>
 

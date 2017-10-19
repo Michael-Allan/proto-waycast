@@ -3,10 +3,11 @@
     <head>
         <link rel='license' href='http://creativecommons.org/publicdomain/zero/1.0/'/> <!-- This file
           has been dedicated to the public domain under a CC0 licence.  Further details at bottom. -->
-        <link rel='stylesheet' href='http://reluk.ca/project/way/xht/rend/readable.css'/> <!-- HERE CUSTOM -->
+        <link rel='stylesheet' href='http://reluk.ca/project/ways/xht/rend/readable.css'/> <!-- HERE CUSTOM -->
+        <link rel='stylesheet' href='http://reluk.ca/project/ways/xht/rend/pre_note.css'/> <!-- HERE CUSTOM -->
         <meta charset='UTF-8'/>
         <title>Normative ethic</title>
-        <cog:repo href='../../..'/>
+        <cog:cast base='../../..'/>
         </head>
     <html:body xmlns='data:,wayscript.bit' xmlns:html='http://www.w3.org/1999/xhtml'>
         <!-- <<< deindent -->
@@ -14,79 +15,55 @@
 
 
 <ethic>
-    <cog:including>
-        <virtue cog:lid='virtue'>
-            <cog:comprising>, together as one
-                <G cog:lid='G'>
-                    Relating the personal to the endmost goal of the person
-                    </G>
-                <F cog:lid='F'>
-                    Promoting a maximum, universal sum of personal freedom
-                    </F>
-                <let_GF cog:lid='let_GF'>
-                    Impeding no virtue
-                    </let_GF>
-                </cog:comprising>
-            </virtue>
-        <rights>
-            <cog:comprising>
-                <G>
-                    To relate the personal to the endmost goal of the person
-                    while thereby violating no right
-                    </G>
-                <F>
-                    To promote a maximum, universal sum of personal freedom
-                    while thereby violating no right
-                    </F>
-                </cog:comprising>
-            </rights>
-        <duties>
-            <cog:comprising>
-                <letG>
-                    Counter no relation of the personal to the endmost goal of the person,
-                    where the relation itself implies the neglect of no duty
-                    </letG>
-                <letF>
-                    Counter no promotion of a maximum, universal sum of personal freedom,
-                    where the promotion itself implies the neglect of no duty
-                    </letF>
-                </cog:comprising>
-            </duties>
-        </cog:including>
-    <application>Moral norms apply as moral duties, rights and virtues</application>
     <norms>
         <cog:comprising>
             <right>Right is (to me) having the forms G and F, and not thereby being wrong</right>
-            <wrong>Wrong is (to me) countering a form G or F that implies no wrong itself</wrong>
+            <wrong>Wrong is (to me) countering a form G or F that is not itself wrong</wrong>
             </cog:comprising>
-        <formal>
-            Formally G and F seem necessary to matter M
-            <entanglement>M is thoroughly entangled in form G</entanglement>
-            <entanglement>M is thoroughly entangled in form F</entanglement>
-            <!-- both ↑ need waylinks into ../moral_form/ -->
-            </formal>
-        <instrumental cog:lid='instrumental_to_M'>
-            Instrumentally G and F seem necessary and sufficient to matter M
-            <goal>M looks intently to a final end E</goal>
-            <necessary>The institution of G seems prudently indispensible as a means to E</necessary>
-            <necessary>The institution of F seems prudently indispensible as a means to E</necessary>
-            <sufficient>The combined institution of G and F seems to lack nothing as a means to E</sufficient>
-            <!-- all ↑ need waylinks into ../moral_form/, as even the first ("looks to") is a formal argument;
-                 indeed it's the instance of form G in which "M is thoroughly entangled" -->
-            </instrumental>
-        <personal>
-            M is (to me) <html:em>a moral</html:em> matter
-            <disclosure>M is all that matters to me</disclosure>
-                <disclosure>Nothing outside of M concerns me</disclosure>
-                    <disclosure>I have no greater, more enduring concern than M</disclosure>
-            </personal>
+        <warrant>
+            <_ cog:link='/theorist/ethics/moral_form/#formal_necessity'/>
+            <_ cog:link='/theorist/ethics/moral_form/#instrumental_fitness'/>
+            <_ cog:link='/theorist/ethics/moral_matter/#M_as_moral'/>
+            </warrant>
         </norms>
+    <application>
+        Moral norms apply as moral virtue, duties and rights
+        <virtue cog:lid='virtue'>
+            <cog:comprising>, together as one
+                <G cog:link='/theorist/ethics/moral_form/#G'/>
+                <F cog:link='/theorist/ethics/moral_form/#F'/>
+                <let_GF>Impeding no virtue</let_GF>
+                </cog:comprising>
+            </virtue>
+        <duties>
+            <cog:comprising>
+                <let_G>
+                    Counter no dutiful relation of the personal to the endmost goal of the person
+                    </let_G>
+                <let_F>
+                    Counter no dutiful promotion of a maximum, universal sum of personal freedom
+                    </let_F>
+                </cog:comprising>
+            </duties>
+        <rights>
+            <cog:comprising>
+                <to_G>
+                    To relate the personal to the endmost goal of the person
+                    while thereby violating no right
+                    </to_G>
+                <to_F>
+                    To promote a maximum, universal sum of personal freedom
+                    while thereby violating no right
+                    </to_F>
+                </cog:comprising>
+            </rights>
+        </application>
     </ethic>
 
 
 
         <!-- >>> reindent -->
-        <html:script src='http://reluk.ca/project/way/xht/rend/readable.js'/> <!-- HERE CUSTOM -->
+        <html:script src='http://reluk.ca/project/ways/xht/rend/readable.js'/> <!-- HERE CUSTOM -->
         </html:body>
     </html>
 
