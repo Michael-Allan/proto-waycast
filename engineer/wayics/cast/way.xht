@@ -3,96 +3,90 @@
     <head>
         <link rel='license' href='http://creativecommons.org/publicdomain/zero/1.0/'/> <!-- This file
           has been dedicated to the public domain under a CC0 licence.  Further details at bottom. -->
-        <link rel='stylesheet' href='http://reluk.ca/project/wayic/rend/readable.css'/> <!-- HERE CUSTOM -->
-        <link rel='stylesheet' href='http://reluk.ca/project/wayic/rend/pre_note.css'/> <!-- HERE CUSTOM -->
+        <link rel='stylesheet' href='http://reluk.ca/project/wayic/read/readable.css'/> <!-- HERE CUSTOM -->
+        <link rel='stylesheet' href='http://reluk.ca/project/wayic/read/pre_note.css'/> <!-- HERE CUSTOM -->
         <meta charset='UTF-8'/>
         <title>The waycast</title>
         <cog:cast base='../../..'/>
         </head>
-    <html:body xmlns='data:,wayscript.bit' xmlns:html='http://www.w3.org/1999/xhtml'>
+    <html:body xmlns='data:,wayscript.bit' xmlns:html='http://www.w3.org/1999/xhtml'
+          xmlns:step='data:,wayscript.bit.step'>
         <!-- <<< deindent -->
 
 
 
-<constraint_G cog:lid='ever_G' cog:link='/theorist/ethics/normative_ethic/#G'>
+<definition cog:lid='waycast_defined'>
+    The waycast is the formalized definition of a way,
+    especially for the purpose of publicly commiting to follow it
+      <!-- changing? → http://reluk.ca/project/wayic/lex/waycast  HERE CUSTOM -->
+    </definition>
+
+
+
+<constraint_G cog:lid='ever_G' cog:link='/theorist/ethics/moral_form/#G'>
     Always the waycast relates the personal to the endmost goal of the person
-    <requirement cog:lid='endmost_goal_recording'>
-        The waycast records one’s endmost goal
-        </requirement>
-    <requirement cog:lid='goalward_recording'>
-        The waycast records personal expressions that relate to one’s endmost goal and so define one’s way
-        </requirement>
-    <requirement>
-        The waycast records personal expressions that relate to one’s way and so define its context
-        </requirement>
-    <requirement>
-        The waycast traces and tracks one’s way and its context
-        <cog:including>
-            <r>
-                The waycast traces and tracks all the world’s expressions that define one’s way and its context
-                </r>
-            </cog:including>
-        <!--- - - - -                                                                   HERE DOWN CUSTOM
-        = fix these clumsy conjunctions of 'way' and 'context'
-            - here 'context' means the formalized environment of way (variants)
-              that informs changes to the way definition
-            | instead express their combination as a single word
-                | 'variations'
-                    - both
-                        - temporal variations
-                            - changes to one's own way
-                        - spatial variations
-                            - variant ways
-                            - alternatives on offer
-                | [something] = inner [something] + outer [something]
-                    | 'definition' = inner definition + outer definition
-                        < definition = inner definition + outer definition
-                        - con: fails to capture the notion of the outer as a resource for inner changes
-            - - - -                                                                   HERE UP CUSTOM -->
-        <r>
-            The definitions of a way and its context can extend across multiple wayrepos
-            <r cog:link='#available'/>
-            </r>
-        <r>
-            The extension,
-            <html:a href='http://reluk.ca/project/wayic/lex/collate'>tracing</html:a> and
-            <html:a href='http://reluk.ca/project/wayic/lex/track'>tracking</html:a>
-            of a way and its context happen in the background of awareness
-              <!-- from http://reluk.ca/project/wayic/lex/background -->
-            <fact>A way context can be too big for one alone to monitor and maintain</fact>
-            <fact>A way         can be too big for one alone to monitor and maintain</fact>
-            <r cog:link='../#backgrounding'/>
-            </r>
-        </requirement>
     </constraint_G>
 
 
 
-<constraint_F cog:lid='ever_F' cog:link='/theorist/ethics/normative_ethic/#F'>
+<constraint_F cog:lid='ever_F' cog:link='/theorist/ethics/moral_form/#F'>
     Always the waycast promotes a maximum, universal sum of personal freedom
-    <requirement>
+    <_>
         The waycast is personal property, to shape and fill according to one’s will
-        </requirement>
-    <requirement cog:lid='available'>
+        </_>
+    <_ cog:lid='availability'>
         A waycast of one’s own is available to anyone who wants it
-        <r cog:lid='public'>
+        <_>The waycast propagates by free copying</_>
+        <_>
             The waycast is a public facility
-            <r cog:link='../#public_reading'/>
-            </r>
-        <r cog:lid='propagating'>The waycast propagates by free copying</r>
-        </requirement>
-    <requirement>
+            <_ cog:link='../#way_publication'/>
+            </_>
+        </_>
+    <_>
         The waycast is inalienable from the person
-        </requirement>
-    <belief>
-        Personal freedom increases when useful tools are in the hands of the person
-        </belief>
+        </_>
+    <postulate>
+        Personal ownership of used tools increases personal freedom
+        </postulate>
     </constraint_F>
 
 
 
+<provision cog:lid='backgrounding'>
+    The backgrounding of waycasts
+    <definition id='backgrounding_defined'>
+        Backgrounding is the interpersonally extended maintenance of a waycast
+        in the background of personal awareness
+          <!-- changing? → http://reluk.ca/project/wayic/lex/background#backgrounding  HERE CUSTOM -->
+        </definition>
+    <cog:loop>
+        Provide backgrounding
+        <step:rectify>
+            Wayscript a correction
+            <step:fail>
+                Encounter a fault
+                <step:try>
+                    Try to background <html:a href='/'>this waycast</html:a>
+                    <step:script id='simulated_back_link_45'>
+                        Script the provision of backgrounding
+                        <scripting cog:link='/actor/#commitment' cog:ordinal='45'/>
+                        <_ cog:link='#availability'/>
+                        <_ cog:link='../#way_publication'/>
+                        <_ cog:link='../#way_clarity'/>
+                        <_>
+                            Project <html:a href='http://reluk.ca/project/wayic/back/'>wayic/back</html:a>
+                            </_>
+                        </step:script>
+                    </step:try>
+                </step:fail>
+            </step:rectify>
+        </cog:loop>
+    </provision>
+
+
+
         <!-- >>> reindent -->
-        <html:script src='http://reluk.ca/project/wayic/rend/readable.js'/> <!-- HERE CUSTOM -->
+        <html:script src='http://reluk.ca/project/wayic/read/readable.js'/> <!-- HERE CUSTOM -->
         </html:body>
     </html>
 

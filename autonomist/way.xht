@@ -3,11 +3,11 @@
     <head>
         <link rel='license' href='http://creativecommons.org/publicdomain/zero/1.0/'/> <!-- This file
           has been dedicated to the public domain under a CC0 licence.  Further details at bottom. -->
-        <link rel='stylesheet' href='http://reluk.ca/project/wayic/rend/readable.css'/> <!-- HERE CUSTOM -->
-        <link rel='stylesheet' href='http://reluk.ca/project/wayic/rend/pre_note.css'/> <!-- HERE CUSTOM -->
+        <link rel='stylesheet' href='http://reluk.ca/project/wayic/read/readable.css'/> <!-- HERE CUSTOM -->
+        <link rel='stylesheet' href='http://reluk.ca/project/wayic/read/pre_note.css'/> <!-- HERE CUSTOM -->
         <meta charset='UTF-8'/>
         <cog:cast base='..'/>
-        <title>Planning my life’s work</title>
+        <title>Instituting the waycast cum virtue</title>
         </head>
     <html:body xmlns='data:,wayscript.bit' xmlns:html='http://www.w3.org/1999/xhtml'
           xmlns:step='data:,wayscript.bit.step'>
@@ -17,13 +17,12 @@
 
 <step:_ cog:lid='institute_virtue'>
     Institute a virtue
-    <_ι cog:link='/theorist/ethics/normative_ethic/#virtue'/>
     <cog:loop id='repo_institution'>
         Institute the waycast
-        <step:mend>
-            Script a correction
+        <step:rectify>
+            Wayscript a correction
             <step:fail>
-                Reach an impasse in the way
+                Uncover a fault either in the waycast or its institution
                 <cog:including>, as it may happen
                     <provision cog:lid='impedance_detection_on_cast'>
                         Detection of any impedance of virtue by the waycast
@@ -32,42 +31,53 @@
                         Detection of any impedance of virtue by the institution of the waycast
                         </provision>
                     </cog:including>
-                <step:use>
-                    Use the waycast fully and truly in its latest form
-                    <requirement cog:link='/engineer/wayics/#repo_conformant'/>
-                    <step:_>
-                        <html:a href='/actor/way.xht'>Actively step</html:a> through the way
-                        </step:_>
-                    </step:use>
+                <step:try>
+                    Try to use the waycast according to its self definition
+                    <self_definition cog:link='/engineer/wayics/cast/#waycast_defined'/>
+                    <step:follow>
+                        Follow the way as commited
+                        <step:_>
+                            <html:a href='/actor/way.xht#commitment'>Commit</html:a> to following the way
+                            </step:_>
+                        </step:follow>
+                    </step:try>
+                <step:drive id='simulated_back_link_85'>
+                    Drive the waycast institution by mobilizing the tractive power of backgrounding
+                    <driving cog:link='/actor/#commitment' cog:ordinal='95'/>
+                    <practical_equation>
+                        The institution of the waycast = the backgrounding of waycasts in general
+                        <_ cog:link='/engineer/wayics/cast/#backgrounding'/>
+                        </practical_equation>
+                    </step:drive>
                 </step:fail>
-            </step:mend>
+            </step:rectify>
         </cog:loop>
     <constraint id='virtue_conformant_cast' cog:link='/theorist/ethics/normative_ethic/#virtue'>
-        The waycast keeps the form of virtue
+        The waycast stays in the form of virtue
         <G>
-            The waycast keeps form G
-            <requirement cog:link='/engineer/wayics/cast/#ever_G'/>
+            The waycast stays in form G
+            <_ cog:link='/engineer/wayics/cast/#ever_G'/>
             </G>
         <F>
-            The waycast keeps form F
-            <requirement cog:link='/engineer/wayics/cast/#ever_F'/>
+            The waycast stays in form F
+            <_ cog:link='/engineer/wayics/cast/#ever_F'/>
             </F>
         <let_GF>
             The waycast avoids impeding a virtue
-            <requirement cog:link='#impedance_detection_on_cast'/>
+            <_ cog:link='#impedance_detection_on_cast'/>
             </let_GF>
         </constraint>
     <constraint id='virtue_compat_inst'>
         The institution of the waycast avoids impeding a virtue
-        <_>To gain one virtue at the cost of another is to risk a net loss</_>
-        <requirement cog:link='#impedance_detection_on_institution'/>
+        <!-- to gain one virtue at the cost of another is to risk a net loss -->
+        <_ cog:link='#impedance_detection_on_institution'/>
         </constraint>
     </step:_>
 
 
 
         <!-- >>> reindent -->
-        <html:script src='http://reluk.ca/project/wayic/rend/readable.js'/> <!-- HERE CUSTOM -->
+        <html:script src='http://reluk.ca/project/wayic/read/readable.js'/> <!-- HERE CUSTOM -->
         </html:body>
     </html>
 
