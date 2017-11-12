@@ -17,7 +17,7 @@
 
 <step:_ cog:lid='institute_virtue'>
     Institute a virtue
-    <cog:loop id='repo_institution'>
+    <loop>
         Institute the waycast
         <step:rectify>
             Wayscript a correction
@@ -51,8 +51,8 @@
                     </step:drive>
                 </step:fail>
             </step:rectify>
-        </cog:loop>
-    <constraint id='virtue_conformant_cast' cog:link='/theorist/ethics/normative_ethic/#virtue'>
+        </loop>
+    <constraint cog:link='/theorist/ethics/normative_ethic/#virtue'>
         The waycast stays in the form of virtue
         <G>
             The waycast stays in form G
@@ -67,7 +67,7 @@
             <_ cog:link='#impedance_detection_on_cast'/>
             </let_GF>
         </constraint>
-    <constraint id='virtue_compat_inst'>
+    <constraint>
         The institution of the waycast avoids impeding a virtue
         <!-- to gain one virtue at the cost of another is to risk a net loss -->
         <_ cog:link='#impedance_detection_on_institution'/>
