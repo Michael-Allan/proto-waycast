@@ -5,8 +5,8 @@
           has been dedicated to the public domain under a CC0 licence.  Further details at bottom. -->
         <link rel='stylesheet' href='http://reluk.ca/project/wayic/read/readable.css'/> <!-- HERE CUSTOM -->
         <link rel='stylesheet' href='http://reluk.ca/project/wayic/read/pre_note.css'/> <!-- HERE CUSTOM -->
-        <cog:cast base='..'/>
         <title>Instituting the waycast cum virtue</title>
+        <cog:cast base='..'/>
         </head>
     <html:body xmlns='data:,wayscript.bit' xmlns:html='http://www.w3.org/1999/xhtml'
           xmlns:step='data:,wayscript.bit.step'>
@@ -14,63 +14,60 @@
 
 
 
+<terminology>
+    <institute cog:lid='institute_defined'>
+        To establish and maintain within society
+        </institute>
+    </terminology>
+
+
+
 <step:_ cog:lid='institute_virtue'>
-    Institute a virtue
-    <loop>
-        Institute the waycast
-        <step:rectify>
-            Wayscript a correction
-            <step:fail>
-                Uncover a fault either in the waycast or its institution
-                <cog:including>, as it may happen
-                    <provision cog:lid='impedance_detection_on_cast'>
-                        Detection of any impedance of virtue by the waycast
-                        </provision>
-                    <provision cog:lid='impedance_detection_on_institution'>
-                        Detection of any impedance of virtue by the institution of the waycast
-                        </provision>
-                    </cog:including>
-                <step:try>
-                    Try to use the waycast according to its self definition
-                    <self_definition cog:link='/engineer/wayics/cast/#waycast_defined'/>
-                    <step:follow>
-                        Follow the way as commited
-                        <step:_>
-                            <html:a href='/actor/way.xht#commitment'>Commit</html:a> to following the way
-                            </step:_>
-                        </step:follow>
-                    </step:try>
-                <step:drive id='simulated_back_link_85'>
-                    Drive the waycast institution by mobilizing the tractive power of backgrounding
-                    <driving cog:link='/actor/#commitment' cog:ordinal='95'/>
-                    <practical_equation>
-                        The institution of the waycast = the backgrounding of waycasts in general
-                        <_ cog:link='/engineer/wayics/cast/#backgrounding'/>
-                        </practical_equation>
-                    </step:drive>
-                </step:fail>
-            </step:rectify>
-        </loop>
-    <constraint cog:link='/theorist/ethics/normative_ethic/#virtue' id='constraints'>
+    Institute a <html:a href='/theorist/ethics/normative_ethic/way.xht#virtue'>virtue</html:a>
+    <step:_ cog:link='#institute_waycast'/>
+    <constraint>
         The waycast stays in the form of virtue
-        <G>
-            The waycast stays in form G
-            <_ cog:link='/engineer/wayics/cast/#ever_G'/>
-            </G>
-        <F>
-            The waycast stays in form F
-            <_ cog:link='/engineer/wayics/cast/#ever_F'/>
-            </F>
-        <let_GF>
-            The waycast avoids impeding a virtue
-            <_ cog:link='#impedance_detection_on_cast'/>
-            </let_GF>
+        <G cog:link='/engineer/wayics/cast/#ever_G'/>
+        <F cog:link='/engineer/wayics/cast/#ever_F'/>
+        <let_GF>Never the waycast impedes a virtue</let_GF>
         </constraint>
     <constraint>
-        The institution of the waycast avoids impeding a virtue
+        Never the institution of the waycast impedes a virtue
         <!-- to gain one virtue at the cost of another is to risk a net loss -->
-        <_ cog:link='#impedance_detection_on_institution'/>
         </constraint>
+    </step:_>
+
+
+
+<step:_ cog:lid='institute_waycast'>
+    Institute the <html:a href='/engineer/wayics/cast/way.xht#waycast_defined'>waycast</html:a>
+    <step:_>
+        Institute the waycast primarily from a subjective viewpoint
+        <step:loop cog:link='/engineer/wayics/#personal_undertaking'/>
+        <vantage>
+            A subjective viewpoint is good for the institution of the waycast
+            <_>
+                The institution of the waycast depends on freedom
+                <_>
+                    The form of the waycast
+                    <html:a href='/engineer/wayics/cast/way.xht#ever_F'>depends on freedom</html:a>
+                    </_>
+                <_>
+                    The institution of a thing depends on the form of the thing
+                    </_>
+                </_>
+            <_>
+                Freedom in turn depends on a subjective viewpoint
+                <_>
+                    Freedom exists within me as a privileged point of view, a cherished formality,
+                    a mere presupposition of my actual freedom
+                    <_ cog:link='/theorist/ethics/moral_matter/#R'/>
+                    <_>Practical reason depends on a rational will</_>
+                    <_ cog:link='/theorist/ethics/moral_form/#FW'/>
+                    </_>
+                </_>
+            </vantage>
+        </step:_>
     </step:_>
 
 

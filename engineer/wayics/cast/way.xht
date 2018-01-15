@@ -14,22 +14,26 @@
 
 
 
-<definition cog:lid='waycast_defined'>
-    The waycast is the formalized definition of a way,
-    especially for the purpose of publicly commiting to follow it
-      <!-- changing? sync'd → http://reluk.ca/project/wayic/lex/waycast  HERE CUSTOM -->
-    </definition>
+<terminology>
+    <waycast id='waycast_defined'>
+        A form of way definition
+          <!-- changing? sync'd → http://reluk.ca/project/wayic/cast/waycast  HERE CUSTOM -->
+        <_same cog:link='/engineer/wayics/#way_defined'/>
+        </waycast>
+    </terminology>
 
 
 
-<constraint_G cog:lid='ever_G' cog:link='/theorist/ethics/moral_form/#G'>
+<constraint_G cog:lid='ever_G'>
     Always the waycast relates the personal to the endmost goal of the person
+    <_ cog:link='/theorist/ethics/moral_form/#G'/>
     </constraint_G>
 
 
 
-<constraint_F cog:lid='ever_F' cog:link='/theorist/ethics/moral_form/#F'>
+<constraint_F cog:lid='ever_F'>
     Always the waycast promotes a maximum, universal sum of personal freedom
+    <_ cog:link='/theorist/ethics/moral_form/#F'/>
     <_>
         The waycast is personal property, to shape and fill according to one’s will
         </_>
@@ -38,7 +42,6 @@
         <_>The waycast propagates by free copying</_>
         <_>
             The waycast is a public facility
-            <_ cog:link='/engineer/wayics/#way_publication'/>
             </_>
         </_>
     <_>
@@ -48,39 +51,6 @@
         Personal ownership of used tools increases personal freedom
         </postulate>
     </constraint_F>
-
-
-
-<provision cog:lid='backgrounding'>
-    The backgrounding of waycasts
-    <definition id='backgrounding_defined'>
-        Backgrounding is the interpersonally extended maintenance of a waycast
-        in the background of personal awareness
-          <!-- changing? sync'd → http://reluk.ca/project/wayic/lex/background  HERE CUSTOM -->
-        </definition>
-    <loop>
-        Provide backgrounding
-        <step:rectify>
-            Wayscript a correction
-            <step:fail>
-                Encounter a fault
-                <step:try>
-                    Try to background <html:a href='/'>this waycast</html:a>
-                    <step:script id='simulated_back_link_45'>
-                        Script the provision of backgrounding
-                        <scripting cog:link='/actor/#commitment' cog:ordinal='45'/>
-                        <_ cog:link='#availability'/>
-                        <_ cog:link='/engineer/wayics/#way_publication'/>
-                        <_ cog:link='/engineer/wayics/#way_clarity'/>
-                        <_>
-                            Project <html:a href='http://reluk.ca/project/wayic/back/'>wayic.back</html:a>
-                            </_>
-                        </step:script>
-                    </step:try>
-                </step:fail>
-            </step:rectify>
-        </loop>
-    </provision>
 
 
 
