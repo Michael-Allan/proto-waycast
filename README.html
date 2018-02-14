@@ -12,12 +12,12 @@
         For more information about the licence, see the source of each file.
         </p>
     <ul>                                                                       <!-- HERE DOWN CUSTOM -->
-        <li>Browseable copy of latest files at <a href='http://reluk.ca/project/way/'>reluk.ca</a></li>
+        <li>Browseable copy of latest files at <a href='http://reluk.ca/project/waycast/'>reluk.ca</a></li>
         <li>Browseable revision history at <a>GitHub</a> (top of this page) *</li>
         <li>
             Bare <code>.git</code> clones at
-            <a href=    'http://reluk.ca/var/repo/git/way.git'>reluk.ca</a> or
-            <a href='https://github.com/Michael-Allan/way.git'>GitHub</a> *
+            <a href=    'http://reluk.ca/var/repo/git/waycast.git'>reluk.ca</a> or
+            <a href='https://github.com/Michael-Allan/waycast.git'>GitHub</a> *
             <div style='font-size:0.85em; margin-top:1em; opacity:0.7'>
                 * Liable to be rebased
                 </div>
@@ -52,7 +52,7 @@
                 if( t.localName != 'a' ) continue;
 
                 var maybeFinished = false;
-                if( !isCorrect_reluk && t.href == 'http://reluk.ca/project/way/' )
+                if( !isCorrect_reluk && t.href == 'http://reluk.ca/project/waycast/' )
                 {
                   // Disable useless link, append text directions instead
                   // --------------------
@@ -72,7 +72,7 @@
                           // Remove misleading text directions, enable link instead
                           // ---------------------------------
                             text.replaceData( 0, text.length, ' *' ); // leaving only the last bit
-                            t.setAttribute( 'href', 'https://github.com/Michael-Allan/way/' );
+                            t.setAttribute( 'href', 'https://github.com/Michael-Allan/waycast/' );
                             isCorrect_github = maybeFinished = true;
                         }
                     }
