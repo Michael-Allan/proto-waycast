@@ -1,5 +1,6 @@
-/**
-  * way.js - My personal configuration script for way declaration documents (way.xht)
+/** way.js - My personal configuration script for way declaration documents (way.xht)
+  *
+  *   See also § Personalized configuration § way.js: http://reluk.ca/project/wayic/cast/doc.task
   */
 'use strict';
 ( function()
