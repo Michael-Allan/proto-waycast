@@ -50,7 +50,7 @@
     <h2>Resources</h2>
     <ul>
         <li>
-            <a href='http://reluk.ca/project/wayic/'>wayic.∗</a> - Small tools and such for waycasting
+            <a href='http://reluk.ca/project/wayic/'>wayic.∗</a> - Small tools for waycasting
             </li>
         </ul>
     </section>
@@ -93,8 +93,8 @@
                         text = asText( t.nextSibling );
                         if( text !== null )
                         {
-                          // Remove misleading text directions, enable link instead
-                          // ---------------------------------
+                          // Remove deceptive text directions, enable link instead
+                          // --------------------------------
                             text.replaceData( 0, text.length, ' *' ); // Leaving only the last bit
                             t.setAttribute( 'href', 'https://github.com/Michael-Allan/waycast/' );
                             isCorrect_github = maybeFinished = true;
