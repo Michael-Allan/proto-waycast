@@ -20,6 +20,8 @@
       // -------------------------------------
         loadProgram( dirWayic + 'read/readable.js', ( _Event ) =>
         {
+            if( wayic.read.readable === undefined ) return; // Program failed
+
             let wasRequestFileSchemed = false;
             let wasRequestViaLocalWeb = false;
             const docLoc = document.URL;
