@@ -16,11 +16,12 @@
       */
     function run( dirWayic )
     {
-      // Make the document readable on the web, transforming it with wayic.read.readable
+      // Make the document readable on the web, transforming it with wayic.read
       // -------------------------------------
         loadProgram( dirWayic + 'read/readable.js', ( _Event ) =>
         {
-            if( wayic.read.readable === undefined ) return; // Program failed
+            const readable = wayic_read_readable;
+            if( readable === undefined ) return; // Program failed
 
             let wasRequestFileSchemed = false;
             let wasRequestViaLocalWeb = false;
@@ -30,7 +31,7 @@
 
           // ? With constraints enforced
           // ---------------------------
-            wayic.read.readable.setEnforceConstraints(
+            readable.setEnforceConstraints(
                 // true                  // Yes
                    wasRequestFileSchemed // Only for me, testing locally via the file system
                 // wasRequestViaLocalWeb // Only for me, testing locally via the web server
@@ -45,12 +46,12 @@
                 // wasRequestViaLocalWeb // Only for me, testing locally via the web server
                    false                 // No
               ;
-            if( toDarkenChrome ) wayic.read.readable.setLightingStyle( 'neon' );
+            if( toDarkenChrome ) readable.setLightingStyle( 'neon' );
               // Till I learn how to darken Chrome more directly, e.g. by its own settings
 
-          // Start the transformer
-          // ---------------------
-            wayic.read.readable.start();
+          // Start transforming
+          // ------------------
+            readable.start();
         });
     }
 
