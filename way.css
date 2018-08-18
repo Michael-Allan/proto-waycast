@@ -1,11 +1,11 @@
-/* way.css - Personal style sheet for my way declaration documents (way.xht)
+/* way.css - Personal style sheet for my way declaration documents
  *
- *   This style sheet governs each way declaration document (way.xht) in my waycast.
- *   Together with the program way.js, it configures the web view of the document.
+ *   This style sheet governs each way declaration document in my waycast.
+ *   Together with program way.js it configures the web view of the document.
  *   Details: http://reluk.ca/project/wayic/cast/doc.task § Personal configuration
  */
 
- /* Make it readable on the web
+ /* Make it readable on the Web
   * --------------------------- */
     @import 'http://reluk.ca/project/wayic/read/readable.css';
  /* @import '/home/mike/var/deploy/wayic/test/read/readable.css'; TEST purposes only */

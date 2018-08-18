@@ -1,7 +1,7 @@
 /** way.js - Personal configuration program for my way declaration documents
   *
-  *   This program runs once for each way declaration document (way.xht) in my waycast.
-  *   Together with the style sheet way.css, it configures the web view of the document.
+  *   This program runs once for each way declaration document in my waycast.
+  *   Together with style sheet way.css it configures the web view of the document.
   *   Details: http://reluk.ca/project/wayic/cast/doc.task § Personal configuration
   */
 'use strict';
@@ -16,7 +16,7 @@
       */
     function run( dirWayic )
     {
-      // Make the document readable on the web, transforming it with wayic.read
+      // Make the document readable on the Web, transforming it with wayic.read
       // -------------------------------------
         loadProgram( dirWayic + 'read/readable.js', ( _Event ) =>
         {
