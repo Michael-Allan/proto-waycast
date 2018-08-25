@@ -33,12 +33,15 @@
                 </_>
             <_>Faults include all obstructions in the way</_>
             <step:try>
-                Try to use the <html:a cog:link='/constraints.xht#waycast_defined'>
-                waycast</html:a>
+                Try to use the <html:a cog:link='/constraints.xht#waycast_defined'>waycast</html:a>
                 <step:follow>
                     Follow the way as cast
-                    <step:cast>
+                    <step:cast id='cast'>
                         Cast my <html:a cog:link='#way_defined'>way</html:a>
+                        <step:_ id='simulated_back_link_1'>
+                            Redact my waycast for clarity
+                            <redacting cog:link='/#resolve'/> <!-- wayic.read project.task -->
+                            </step:_>
                         </step:cast>
                     <step:intercast cog:link='#social_construction'/>
                     </step:follow>
@@ -60,13 +63,10 @@
             intercast networks</html:a>
             <step:_>
                 Make the waycast generally readable
-                <step:_>
-                    Redact the present waycast for clarity
-               <!-- <redacting cog:link='/#commitment'/> waycast project.task -->
-                    <step:_ id='simulated_back_link_1'>
-                        Make <html:a href='http://reluk.ca/project/wayic/read/'>wayic.read</html:a>
-                        <making cog:link='/#commitment'/> <!-- wayic.read project.task -->
-                        </step:_>
+                <step:_ cog:link='#cast'/>
+                <step:_ id='simulated_back_link_2'>
+                    Make <html:a href='http://reluk.ca/project/wayic/read/'>wayic.read</html:a>
+                    <making cog:link='/#resolve'/> <!-- wayic.read project.task -->
                     </step:_>
                 </step:_>
             </step:design>
