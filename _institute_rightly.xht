@@ -20,12 +20,12 @@
 
 
 <step:_ id='institute_virtue'>
-    Institute a <html:a cog:link='/normative_ethic.xht#virtue'>virtue</html:a>
-    <step:_ cog:link='#institute_waycast'/>
+    Institute a <html:a cog:join='/normative_ethic.xht#virtue'>virtue</html:a>
+    <step:_ cog:join='#institute_waycast'/>
     <constraint>
         The waycast stays in the form of virtue
-        <G cog:link='/constraints.xht#ever_G'/>
-        <F cog:link='/constraints.xht#ever_F'/>
+        <G cog:join='/constraints.xht#ever_G'/>
+        <F cog:join='/constraints.xht#ever_F'/>
         <let_GF>Never the waycast impedes a virtue</let_GF>
         </constraint>
     <constraint>
@@ -37,17 +37,17 @@
 
 
 <step:_ id='institute_waycast'>
-    Institute the <html:a cog:link='/constraints.xht#waycast_defined'>waycast</html:a>
+    Institute the <html:a cog:join='/constraints.xht#waycast_defined'>waycast</html:a>
     <step:_>
         Institute the waycast primarily from a subjective viewpoint
-        <step:loop cog:link='/_institute_truly.xht#personal_undertaking'/>
+        <step:loop cog:join='/_institute_truly.xht#personal_undertaking'/>
         <vantage>
             A subjective viewpoint is good for the institution of the waycast
             <_>
                 The institution of the waycast depends on freedom
                 <_>
                     The form of the waycast
-                    <html:a cog:link='/constraints.xht#ever_F'>depends on freedom</html:a>
+                    <html:a cog:join='/constraints.xht#ever_F'>depends on freedom</html:a>
                     </_>
                 <_>
                     The institution of a thing depends on the form of the thing
@@ -58,9 +58,9 @@
                 <_>
                     Freedom exists within me as a privileged point of view, a cherished formality,
                     a mere presupposition of my actual freedom
-                    <_ cog:link='/moral_facts.xht#R'/>
+                    <_ cog:join='/moral_facts.xht#R'/>
                     <_>Practical reason depends on a rational will</_>
-                    <_ cog:link='/moral_forms.xht#FW'/>
+                    <_ cog:join='/moral_forms.xht#FW'/>
                     </_>
                 </_>
             </vantage>
