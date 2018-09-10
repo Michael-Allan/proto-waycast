@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<html xml:lang='en-CA' xmlns='http://www.w3.org/1999/xhtml' xmlns:cog='data:,wayscript.cog'>
+<html xml:lang='en-CA' xmlns='http://www.w3.org/1999/xhtml' xmlns:way='data:,wayscript'>
     <head>
         <link rel='license' href='http://creativecommons.org/publicdomain/zero/1.0/'/> <!-- This file
           has been dedicated to the public domain under a CC0 licence.  Further details at bottom. -->
@@ -22,13 +22,13 @@
 
 
 <moral_forms>
-    <html:a cog:join='/moral_facts.xht#M'>Moral matter M</html:a> has two essential forms
-    <cog:group rel='in'> comprising:
+    <html:a way:join='/moral_facts.xht#M'>Moral matter M</html:a> has two essential forms
+    <way:group rel='in'> comprising:
         <G id='G'>Relation of the personal to the endmost goal of the person</G>
           <!-- changing?  sync'd → http://reluk.ca/project/wayic/architec/form_G  HERE CUSTOM -->
         <F id='F'>Promotion of a maximum, universal sum of personal freedom</F>
           <!-- changing?  sync'd → http://reluk.ca/project/wayic/architec/form_F  HERE CUSTOM -->
-        </cog:group>
+        </way:group>
     <formal_necessity id='formal_necessity'>
         Apparently G and F are formally necessary to M
         <_>
@@ -44,16 +44,16 @@
         Apparently G and F are instrumentally necessary and sufficient to M
         <_>
             M is aimed at E
-            <M cog:join='/moral_facts.xht#M'/>
-            <E cog:join='/moral_facts.xht#E'/>
+            <M way:join='/moral_facts.xht#M'/>
+            <E way:join='/moral_facts.xht#E'/>
             </_>
         <_ id='E_from_GF'>
             To reach E, it appears necessary and sufficient to institute G and F
-            <cog:group rel='in'> comprising:
+            <way:group rel='in'> comprising:
                 <_>Instituting G seems prudently indispensible as a means to E</_>
                 <_>Instituting F seems prudently indispensible as a means to E</_>
                 <_>The combined institution of G and F seems to lack nothing as a means to E</_>
-                </cog:group>
+                </way:group>
             <step:script>Script this</step:script>
             </_>
         </instrumental_fitness>
