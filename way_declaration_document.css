@@ -1,8 +1,8 @@
-/* way.css - Personal style sheet for my way declaration documents
+/* way_declaration_document.css - Personal style sheet for my way declaration documents
  *
- *   This style sheet governs each way declaration document in my waycast.
- *   Together with program way.js it configures the web view of the document.
- *   Details: http://reluk.ca/project/wayic/cast/doc.task § Personal configuration
+ * This style sheet, together with program way_declaration_document.js,
+ * configures the web view of each way declaration document in my waycast.
+ * Details: http://reluk.ca/project/wayic/cast/doc.task § Configuration of the waycast
  */
 
  /* Make it readable on the Web

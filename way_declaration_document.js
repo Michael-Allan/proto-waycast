@@ -1,8 +1,8 @@
-/** way.js - Personal configuration program for my way declaration documents
+/** way_declaration_document.js - Personal configuration program for my way declaration documents
   *
-  *   This program runs once for each way declaration document in my waycast.
-  *   Together with style sheet way.css it configures the web view of the document.
-  *   Details: http://reluk.ca/project/wayic/cast/doc.task § Personal configuration
+  * This program, together with style sheet way_declaration_document.css,
+  * configures the web view of each way declaration document in my waycast.
+  * Details: http://reluk.ca/project/wayic/cast/doc.task § Configuration of the waycast
   */
 'use strict';
 ( function()
