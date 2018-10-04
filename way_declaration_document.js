@@ -2,7 +2,7 @@
   *
   * This program, together with style sheet way_declaration_document.css,
   * configures the web view of each way declaration document in my waycast.
-  * Details: http://reluk.ca/project/wayic/cast/doc.task § Configuration of the waycast
+  * Details: http://reluk.ca/project/wayic/cast/doc.task § Configuration of a waycast
   */
 'use strict';
 ( function()
