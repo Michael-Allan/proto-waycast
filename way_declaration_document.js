@@ -1,8 +1,10 @@
-/** way_declaration_document.js - Personal configuration program for my way declaration documents
+/** way_declaration_document.js - Document programming on the client side
   *
-  * This program, together with style sheet way_declaration_document.css,
-  * configures the web view of each way declaration document in my waycast.
-  * Details: http://reluk.ca/project/wayic/cast/doc.task § Configuration of a waycast
+  *   Summoned by a *script* tag in each way declaration document of my waycast,
+  *   this program runs on the client side — in the waycast reader’s web browser —
+  *   where it manipulates the DOM of each way declaration document.
+  *
+  *   Usage instructions: http://reluk.ca/project/wayic/web/doc.task § Configuration of a waycast
   */
 'use strict';
 ( function()
@@ -16,8 +18,8 @@
       */
     function run( dirWayic )
     {
-      // Make the document readable on the Web, transforming it with wayic.read
-      // -------------------------------------
+      // Show the document clearly, using wayic.read as the web presenter
+      // -------------------------
         loadProgram( dirWayic + 'read/readable.js', ( _Event ) =>
         {
             const readable = wayic_read_readable;
@@ -49,8 +51,7 @@
             if( toDarkenChrome ) readable.setLightingStyle( 'neon' );
               // Till I learn how to darken Chrome more directly, e.g. by its own settings
 
-          // Start transforming
-          // ------------------
+          // -----
             readable.start();
         });
     }
