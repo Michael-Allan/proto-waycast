@@ -12,73 +12,91 @@
 
 
 
-<ethic>
-    <norms id='norms'>
-        <way:group rel='in'> comprising:
-            <right id='right'>
-                Right is (to me) having the forms G and F, and not thereby being wrong
-                <!-- changing? sync'd → http://reluk.ca/project/wayic/architec/right#right-1  HERE CUSTOM -->
-                </right>
-            <wrong id='wrong'>
-                Wrong is (to me) countering a form G or F that is not itself wrong
-                <!-- changing? sync'd → http://reluk.ca/project/wayic/architec/wrong          HERE CUSTOM -->
-                </wrong>
-            </way:group>
-        <premise>
-            <_>To discriminate between right and wrong is the concern of morality</_>
-            <_>
-                Forms <html:a way:join='/moral_forms.xht#G'>
-                G</html:a> and <html:a way:join='/moral_forms.xht#F'>
-                F</html:a> are (to me) the moral discriminants
-                <_ way:join='/moral_facts.xht#M_as_moral'/>
-                <_ way:join='/moral_forms.xht#formal_necessity'/>
-                <_ way:join='/moral_forms.xht#instrumental_fitness'/>
-                </_>
-            </premise>
-        </norms>
-    <translation>
-        The <html:a way:join='#norms'>
-        norms</html:a> translate to conventional terms as moral virtue, duties and rights
+<ethic id='ethic'>
+    Principles of right and wrong behaviour
+    <way:group rel='in'> comprising:
+        <right id='right'>
+            Right is (to me) having the forms <html:a way:join='/moral_forms.xht#G'>
+            G</html:a> and <html:a way:join='/moral_forms.xht#F'>
+            F</html:a>, and not thereby being wrong
+            <!-- Changing? Sync'd → http://reluk.ca/project/wayic/architec/right#right-1 HERE CUSTOM -->
+            </right>
+        <wrong id='wrong'>
+            Wrong is (to me) countering a form <html:a way:join='/moral_forms.xht#G'>
+            G</html:a> or <html:a way:join='/moral_forms.xht#F'>
+            F</html:a> that is not itself wrong
+            <!-- Changing? Sync'd → http://reluk.ca/project/wayic/architec/wrong         HERE CUSTOM -->
+            </wrong>
+        </way:group>
+    <_ way:nameMask='∵' way:join='/moral_facts.xht#M_as_moral'/>
+    <_ way:nameMask='∵' way:join='/moral_forms.xht#formal_necessity'/>
+    <_ way:nameMask='∵' way:join='/moral_forms.xht#instrumental_fitness'/>
+    </ethic>
+
+
+
+<html:section>
+    <html:h2>Translation to conventional moral terms</html:h2>
+    <html:section>
         <virtue id='virtue'>
-            <way:group rel='in'> comprising, together as one:
+            A virtue ethical translation of the<html:a way:join='#ethic'>
+            ethic</html:a>
+            <way:group rel='in'> comprising the virtues:
                 <G way:join='/moral_forms.xht#G'/>
                 <F way:join='/moral_forms.xht#F'/>
                 <let_GF>No <html:a way:join='#wrong'>
-                 hindrance to virtue</html:a></let_GF>
+                 hindrance to a virtue</html:a></let_GF>
                 </way:group>
             </virtue>
-        <duties>
-            <way:group rel='in'> comprising:
-                <let_G><html:a way:join='#wrong'>
-                    Counter no dutiful</html:a><html:a way:join='/moral_forms.xht#G'>
+        </html:section>
+
+
+
+    <html:section>
+        <duty id='duty'>
+            A deontic translation of the<html:a way:join='#ethic'>
+            ethic</html:a>
+            <way:group rel='in'> comprising the duties:
+                <let_G>
+                    Counter no <html:a href='http://reluk.ca/project/wayic/lex/dutiful'>
+                    dutiful</html:a> <html:a way:join='/moral_forms.xht#G'>
                     relation of the personal to the endmost goal of the person</html:a>
                     </let_G>
-                <let_F><html:a way:join='#wrong'>
-                    Counter no dutiful</html:a><html:a way:join='/moral_forms.xht#F'>
+                <let_F>
+                    Counter no <html:a href='http://reluk.ca/project/wayic/lex/dutiful'>
+                    dutiful</html:a> <html:a way:join='/moral_forms.xht#F'>
                     promotion of a maximum, universal sum of personal freedom</html:a>
                     </let_F>
                 </way:group>
-            </duties>
+            <_ way:nameMask='∵' way:join='#wrong'/>
+            </duty>
+        </html:section>
+
+
+
+    <html:section>
         <rights id='rights'>
+            A translation of the<html:a way:join='#ethic'>
+            ethic</html:a> in terms of human rights
             <way:group rel='in'> comprising:
                 <to_G>
                     To <html:a way:join='/moral_forms.xht#G'>
-                    relate the personal to the endmost goal of the person</html:a><html:br/>
+                    relate the personal to the endmost goal of the person</html:a>
                     while thereby <html:a way:join='#wrong'>
-                    infringing no right</html:a>
-                    <!-- changing?  sync'd → http://reluk.ca/project/wayic/architec/right#right_to_G  HERE CUSTOM -->
+                    infringing no right</html:a> <!-- Changing?
+                      Sync'd → http://reluk.ca/project/wayic/architec/right#right_to_G   HERE CUSTOM -->
                     </to_G>
                 <to_F>
                     To <html:a way:join='/moral_forms.xht#F'>
-                    promote a maximum, universal sum of personal freedom</html:a><html:br/>
+                    promote a maximum, universal sum of personal freedom</html:a>
                     while thereby <html:a way:join='#wrong'>
-                    infringing no right</html:a>
-                    <!-- changing?  sync'd → http://reluk.ca/project/wayic/architec/right#right_to_F  HERE CUSTOM -->
+                    infringing no right</html:a> <!-- Changing?
+                      Sync'd → http://reluk.ca/project/wayic/architec/right#right_to_F   HERE CUSTOM -->
                     </to_F>
                 </way:group>
             </rights>
-        </translation>
-    </ethic>
+        </html:section>
+    </html:section>
 
 
 
