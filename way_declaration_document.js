@@ -1,4 +1,4 @@
-/** way_declaration_document.js - Document programming on the client side
+/** way_declaration_document.js - Personal configuration program
   *
   *   Summoned by a *script* tag in each way declaration document of my waycast,
   *   this program runs on the client side — in the waycast reader’s web browser —
