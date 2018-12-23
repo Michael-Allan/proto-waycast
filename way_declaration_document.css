@@ -7,6 +7,7 @@
  *   Usage instructions: http://reluk.ca/project/wayic/web/doc.task § Configuration of a waycast
  */
 
+
  /* Show the document clearly, using wayic.read as the web presenter
   * ------------------------- */
     @import 'http://reluk.ca/project/wayic/read/readable.css';
@@ -17,6 +18,20 @@
   * ------------------------ */
     @import 'http://reluk.ca/project/wayic/read/pre_note.css';
  /* @import '/home/mike/var/deploy/wayic/test/read/pre_note.css'; TEST */
+
+
+    @namespace html 'http://www.w3.org/1999/xhtml';
+
+
+html|h1 html|a,
+html|h2 html|a,
+html|h3 html|a,
+html|h4 html|a,
+html|h5 html|a,
+html|h6 html|a
+{
+    color: inherit; /* Defeat colour as unecessary and distracting */
+}
 
 
 /* This file has been dedicated by its author(s) to the public domain.  To the extent possible
