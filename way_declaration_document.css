@@ -30,7 +30,8 @@ html|h4 html|a,
 html|h5 html|a,
 html|h6 html|a
 {
-    color: inherit; /* Defeat colour as unecessary and distracting */
+    color: inherit; /* Defeat these as unecessary and distracting here */
+    text-decoration: none;
 }
 
 
