@@ -1,7 +1,7 @@
 /** way_declaration_document.js - Personal configuration program
   *
   *   Summoned by a *script* tag in each way declaration document of my waycast,
-  *   this program runs on the client side — in the waycast reader’s web browser —
+  *   this program runs on the client side — in the waycast reader’s Web browser —
   *   where it manipulates the DOM of each way declaration document.
   *
   *   Usage instructions: http://reluk.ca/project/wayic/web/doc.task § Configuration of a waycast
@@ -18,7 +18,7 @@
       */
     function run( dirWayic )
     {
-      // Show the document clearly, using wayic.read as the web presenter
+      // Show the document clearly, using wayic.read as the Web presenter
       // -------------------------
         loadProgram( dirWayic + 'read/readable.js', ( _Event ) =>
         {
@@ -36,7 +36,7 @@
             readable.setEnforceConstraints(
                 // true                  // Yes
                    wasRequestFileSchemed // Only for me, testing locally via the file system
-                // wasRequestViaLocalWeb // Only for me, testing locally via the web server
+                // wasRequestViaLocalWeb // Only for me, testing locally via the Web server
                 // false                 // No
               );
 
@@ -45,7 +45,7 @@
             const toDarkenChrome =
                 // true                  // Yes
                 // wasRequestFileSchemed // Only for me, testing locally via the file system
-                // wasRequestViaLocalWeb // Only for me, testing locally via the web server
+                // wasRequestViaLocalWeb // Only for me, testing locally via the Web server
                    false                 // No
               ;
             if( toDarkenChrome ) readable.setLightingStyle( 'neon' );

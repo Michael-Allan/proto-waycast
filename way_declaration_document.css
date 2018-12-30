@@ -1,14 +1,14 @@
 /* way_declaration_document.css - Personal style sheet
  *
  *   Summoned by a *link* tag in each way declaration document of my waycast,
- *   this style sheet runs on the client side — in the waycast reader’s web browser —
+ *   this style sheet runs on the client side — in the waycast reader’s Web browser —
  *   where it formats the presentation of each way declaration document.
  *
  *   Usage instructions: http://reluk.ca/project/wayic/web/doc.task § Configuration of a waycast
  */
 
 
- /* Show the document clearly, using wayic.read as the web presenter
+ /* Show the document clearly, using wayic.read as the Web presenter
   * ------------------------- */
     @import 'http://reluk.ca/project/wayic/read/readable.css';
  /* @import '/home/mike/var/deploy/wayic/test/read/readable.css'; TEST purposes only */
