@@ -104,11 +104,34 @@
                     <obvious_utility>
                         <step:reveal>
                             Reveal the waycast content on the Web
+                            <step:_ id='srjImageSimulatorTarget.waycast.redact'>
+                                Redact this waycast
+                                <redacting way:join='/way.xht#resolve'/> <!-- waycast -->
+                                </step:_>
+                            <step:_ id='srjImageSimulatorTarget.read.make'>
+                                Make <html:a href='http://reluk.ca/project/wayic/read/'>
+                                wayic.read</html:a>
+                                <making way:join='/way.xht#resolve'/> <!-- wayic.read -->
+                                </step:_>
                             </step:reveal>
                         </obvious_utility>
                     <admirable_engineering>
                         <step:reveal>
                             Reveal the prototype design on the Web
+                            <step:_ id='srjImageSimulatorTarget.waycast.index'>
+                                Index the design work by commitment jointing
+                                <indexing way:join='/way.xht#resolve'/> <!-- waycast -->
+                                </step:_>
+                            <step:_ id='srjImageSimulatorTarget.intercast.redact'>
+                                Redact <html:a href='http://reluk.ca/project/wayic/intercast/'>
+                                wayic.intercast</html:a>
+                                <redacting way:join='/way.xht#resolve'/> <!-- wayic.intercast -->
+                                </step:_>
+                            <step:_ id='srjImageSimulatorTarget.origins.redact'>
+                                Redact <html:a href='http://reluk.ca/project/wayic/origins/'>
+                                wayic.origins</html:a>
+                                <redacting way:join='/way.xht#resolve'/> <!-- wayic.origins -->
+                                </step:_>
                             </step:reveal>
                         </admirable_engineering>
                     </step:craft>
