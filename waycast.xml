@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- - -
+ ! waycast.xml - General configuration file
+ !
+ !   “This file governs the overall interpretation of the waycast.”
+ !     — http://reluk.ca/project/wayic/cast/doc.task § Configuration of a waycast
+ !
+ !   This file has been dedicated to the public domain under a CC0 licence.  Further details at bottom.
+ -->
+<configuration>
+
+    <!--
+     ! Engagements.  http://reluk.ca/project/wayic/exec/doc.task#engagement
+     !- - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <engagement name='indexing'
+        way_location='/wayic.xht#engaged_IDWED'
+         description='http://reluk.ca/project/waycast/_/project.task#indexing_the_wayic_design_work'/>
+
+    <engagement name='redacting'
+        way_location='/wayic.xht#engaged_RW'
+         description='http://reluk.ca/project/waycast/_/project.task#redacting'/>
+
+    <engagement name='redacting'
+        way_location='/wayic.xht#engaged_RWO'
+         description='http://reluk.ca/project/wayic/origins/project.task#redact'/>
+
+    <engagement name='redacting'
+        way_location='/wayic.xht#engaged_RWI'
+         description='http://reluk.ca/project/wayic/intercast/project.task#redact'/>
+
+    <engagement name='making'
+        way_location='/wayic.xht#engaged_MWR'
+         description='http://reluk.ca/project/wayic/read/project.task'/>
+
+
+    </configuration>
+
+<!-- - -
+ ! This file has been dedicated by its author(s) to the public domain.  To the extent possible
+ ! by law, the author(s) have waived all of their copyright and related or neighbouring rights to
+ ! this file under the terms of CC0 1.0.  http://creativecommons.org/publicdomain/zero/1.0/
+ ! The author(s) are:
+ !
+ !     Michael Allan, mike@reluk.ca, http://reluk.ca/
+ !
+ ! Other authors who make further, substantial contributions to this file, and who wish to dedicate
+ ! their contributions to the public domain, should append their names to the list above.
+ -->
