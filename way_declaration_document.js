@@ -1,10 +1,9 @@
 /** way_declaration_document.js - Personal configuration program
   *
-  *   Summoned by a *script* tag in each way declaration document of my waycast,
+  *   “Summoned by a `script` tag in each way declaration document of the waycast,
   *   this program runs on the client side — in the waycast reader’s Web browser —
-  *   where it manipulates the DOM of each way declaration document.
-  *
-  *   Usage instructions: http://reluk.ca/project/wayic/web/doc.task § Configuration of a waycast
+  *   where it manipulates the DOM of each way declaration document.”
+  *     — http://reluk.ca/project/wayic/web/doc.task § Configuration of a waycast
   */
 'use strict';
 ( function()
@@ -29,7 +28,9 @@
             let wasRequestViaLocalWeb = false;
             const docLoc = document.URL;
             if( docLoc.startsWith( 'file:' )) wasRequestFileSchemed = true;
-            else if( docLoc.startsWith( 'http://obsidian/' )) wasRequestViaLocalWeb = true;
+            else if( docLoc.startsWith( 'http://' )
+              && (   docLoc.startsWith( 'halfpenny/',7 )
+                  || docLoc.startsWith( 'server/',   7 ))) wasRequestViaLocalWeb = true;
 
           // ? With constraints enforced
           // ---------------------------
