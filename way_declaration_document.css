@@ -1,10 +1,9 @@
 /* way_declaration_document.css - Personal style sheet
  *
- *   Summoned by a *link* tag in each way declaration document of my waycast,
+ *   “Summoned by a `link` tag in each way declaration document of the waycast,
  *   this style sheet runs on the client side — in the waycast reader’s Web browser —
- *   where it formats the presentation of each way declaration document.
- *
- *   Usage instructions: http://reluk.ca/project/wayic/web/doc.task § Configuration of a waycast
+ *   where it governs the presentation of each way declaration document.”
+ *     — http://reluk.ca/project/wayic/web/doc.task § Configuration of a waycast
  */
 
 
