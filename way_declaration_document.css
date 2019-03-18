@@ -22,14 +22,15 @@
     @namespace html 'http://www.w3.org/1999/xhtml';
 
 
-html|h1 html|a,
 html|h2 html|a,
 html|h3 html|a,
 html|h4 html|a,
 html|h5 html|a,
 html|h6 html|a
 {
-    color: inherit; /* Defeat these as unecessary and distracting here */
+    /* Pointer styling alone suffices to indicate that my subheaders are self-targeting hyperlinks.
+       Given that all are so, any further styling would be unecessary and distracting.  Defeat it: */
+    color: inherit;
     text-decoration: none;
 }
 
