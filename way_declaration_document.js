@@ -3,7 +3,7 @@
   *   “Summoned by a `script` tag in each way declaration document of the waycast,
   *   this program runs on the client side — in the waycast reader’s Web browser —
   *   where it manipulates the DOM of each way declaration document.”
-  *     — http://reluk.ca/project/wayic/web/doc.task § Configuration of a waycast
+  *     — http://reluk.ca/project/wayic/web/doc.task § configuration of a waycast
   */
 'use strict';
 ( function()
@@ -17,8 +17,9 @@
       */
     function run( dirWayic )
     {
-      // Show the document clearly, using wayic.read as the Web presenter
-      // -------------------------
+      // Show the way clearly, using `wayic.read` as the Web presenter
+      // http://reluk.ca/project/wayic/read/manual.task § installation § personal configuration program
+      // --------------------
         loadProgram( dirWayic + 'read/readable.js', ( _Event ) =>
         {
             const readable = wayic_read_readable;
