@@ -1,9 +1,11 @@
-/** way_declaration_document.js - Personal configuration program
+/** way_declaration_document.js - Personal configuration program for way declaration documents
   *
   *   “Summoned by a `script` tag in each way declaration document of the waycast,
   *   this program runs on the client side — in the waycast reader’s Web browser —
   *   where it manipulates the DOM of each way declaration document.”
   *     — http://reluk.ca/project/wayic/web/doc.task § configuration of a waycast
+  *
+  *   This file has been dedicated to the public domain under a CC0 licence.  Further details at bottom.
   */
 'use strict';
 ( function()
