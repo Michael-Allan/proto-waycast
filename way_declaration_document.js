@@ -1,18 +1,22 @@
-/** way_declaration_document.js - Personal configuration program for way declaration documents
+/** way_declaration_document.js - Personal presentation program for way declaration documents
   *
   *   “Summoned by a `script` tag in each way declaration document of the waycast,
   *   this program runs on the client side — in the waycast reader’s Web browser —
-  *   where it manipulates the DOM of each way declaration document.”
+  *   where it manipulates the DOM of the way declaration.”
   *     — http://reluk.ca/project/wayic/web/doc.task § configuration of a waycast
   *
   *   This file has been dedicated to the public domain under a CC0 licence.  Further details at bottom.
   */
 'use strict';
+console.assert( (eval('var _tmp = null'), typeof _tmp === 'undefined'),
+  'Failed assertion: Strict mode is in effect' );
+  // http://www.ecma-international.org/ecma-262/6.0/#sec-strict-mode-code
+  // Credit Noseratio, https://stackoverflow.com/a/18916788/2402790
 ( function()
 {
 
 
-    /** Runs this program, configuring the view of the document.
+    /** Runs this program.
       *
       *     @param dirWayic (string) Location of the wayic projects directory in URL form,
       *       with a trailing slash '/'.
@@ -20,7 +24,7 @@
     function run( dirWayic )
     {
       // Show the way clearly, using `wayic.read` as the Web presenter
-      // http://reluk.ca/project/wayic/read/manual.task § installation § personal configuration program
+      // http://reluk.ca/project/wayic/read/manual.task § installation § personal presentation program
       // --------------------
         loadProgram( dirWayic + 'read/readable.js', ( _Event ) =>
         {
