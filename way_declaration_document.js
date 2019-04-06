@@ -1,6 +1,6 @@
 /** way_declaration_document.js - Personal presentation program for way declaration documents
   *
-  *   “Summoned by a `script` tag in each way declaration document of the waycast,
+  *   “Summoned by a `script` element in each way declaration document of the waycast,
   *   this program runs on the client side — in the waycast reader’s Web browser —
   *   where it manipulates the DOM of the way declaration.”
   *     — http://reluk.ca/project/wayic/web/doc.task § configuration of a waycast
@@ -16,65 +16,86 @@ console.assert( (eval('var _tmp = null'), typeof _tmp === 'undefined'),
 {
 
 
-    /** Runs this program.
-      *
-      *     @param dirWayic (string) Location of the wayic projects directory in URL form,
-      *       with a trailing slash '/'.
-      */
-    function run( dirWayic )
-    {
-      // Show the way clearly, using `wayic.read` as the Web presenter
-      // http://reluk.ca/project/wayic/read/manual.task § installation § personal presentation program
-      // --------------------
-        loadProgram( dirWayic + 'read/readable.js', ( _Event ) =>
-        {
-            const readable = wayic_read_readable;
-            if( readable === undefined ) return; // Program failed
+    let wasRequestFileSchemed = false;
 
-            let wasRequestFileSchemed = false;
-            let wasRequestViaLocalWeb = false;
+    let wasRequestViaLAN = false;
+
+        {
             const docLoc = document.URL;
             if( docLoc.startsWith( 'file:' )) wasRequestFileSchemed = true;
             else if( docLoc.startsWith( 'http://' )
               && (   docLoc.startsWith( 'halfpenny/',7 )
-                  || docLoc.startsWith( 'server/',   7 ))) wasRequestViaLocalWeb = true;
+                  || docLoc.startsWith( 'server/',   7 ))) wasRequestViaLAN = true;
+        }
+
+
+
+    /** Runs this program.
+      *
+      *     @param relukDir (string) Location of the `reluk.ca` projects directory in URI reference
+      *       form.  See `URI-reference`, https://tools.ietf.org/html/rfc3986#section-4.1
+      */
+    function run( relukDir )
+    {
+        // http://reluk.ca/project/wayic/read/manual.task § basic use § personal presentation program
+        summonScript( relukDir + 'web/client_side.js', ( _Event ) =>
+        {
+            const CSide = window.ca_reluk_web_CSide; // [WA]
+            if( CSide === undefined ) return; // Script failed
 
           // ? With constraints enforced
           // ---------------------------
-            readable.setEnforceConstraints(
+            CSide.setEnforceConstraints(
                 // true                  // Yes
-                   wasRequestFileSchemed // Only for me, testing locally via the file system
-                // wasRequestViaLocalWeb // Only for me, testing locally via the Web server
+                   wasRequestFileSchemed // Only for me, testing via my local file system
+                // wasRequestViaLAN      // Only for me, testing via my local area network
                 // false                 // No
               );
 
-          // ? With dark lighting for my Chrome test browser
-          // --------------------
-            const toDarkenChrome =
-                // true                  // Yes
-                // wasRequestFileSchemed // Only for me, testing locally via the file system
-                // wasRequestViaLocalWeb // Only for me, testing locally via the Web server
-                   false                 // No
-              ;
-            if( toDarkenChrome ) readable.setLightingStyle( 'neon' );
-              // Till I learn how to darken Chrome more directly, e.g. by its own settings
-
           // -----
-            readable.start();
+            summonScript( relukDir + 'wayic/read/readable.js', ( _Event ) =>
+            {
+                const WayDecDoc = window.ca_reluk_wayic_read_WayDecDoc; // [WA]
+                if( WayDecDoc === undefined ) return; // Script failed
+
+                start_layout( WayDecDoc );
+            });
         });
     }
 
 
 
-/// ====================================================================================================
-
-
-    /** Requests that another program load.
+    /** Starts showing the way clearly using `wayic.read` as the Web presenter.
       *
-      *     @param loc (string) Location of the program in URL form.
-      *     @param callback (Function) What to call when the program loads, or null to call nothing.
+      *     @param WayDecDoc (Object) The public interface of the presentation program.
+      *       http://reluk.ca/project/wayic/read/readable.js
       */
-    function loadProgram( loc, callback = null )
+    function start_layout( WayDecDoc )
+    {
+      // ? With dark lighting for my Chrome test browser
+      // --------------------
+        const toDarkenChrome =
+            // true                  // Yes
+            // wasRequestFileSchemed // Only for me, testing via my local file system
+            // wasRequestViaLAN      // Only for me, testing via my local area network
+               false                 // No
+          ;
+        if( toDarkenChrome ) WayDecDoc.setLightingStyle( 'neon' );
+          // Till I learn how to darken Chrome more directly, e.g. by its own settings
+
+      // -----
+        WayDecDoc.start();
+    }
+
+
+
+    /** Requests the loading of another JavaScript program or library into the present document.
+      *
+      *     @param loc (string) Location of the program or library in URI reference form.
+      *       See `URI-reference`, https://tools.ietf.org/html/rfc3986#section-4.1
+      *     @param callback (Function) What to call when the script loads, or null to call nothing.
+      */
+    function summonScript( loc, callback = null )
     {
         const s = document.body.appendChild(
           document.createElementNS( 'http://www.w3.org/1999/xhtml', 'script' ));
@@ -84,14 +105,21 @@ console.assert( (eval('var _tmp = null'), typeof _tmp === 'undefined'),
 
 
 
-/// ================
+////////////////////
 
     run(
-      'http://reluk.ca/project/wayic/'
-   // '/home/mike/var/deploy/wayic/test/' // TEST purposes only
+      'http://reluk.ca/project/'
+   // '/home/mike/var/deploy/test/' // TEST purposes only
       );
 
 }() );
+
+
+/** NOTE
+  * ----
+  *  [WA] · Without the `window.` accessor, the attempt to reference an undefined property would itself
+  *         throw an exception, needlessly cluttering up the console.
+  */
 
 
 // This file has been dedicated by its author(s) to the public domain.  To the extent possible
