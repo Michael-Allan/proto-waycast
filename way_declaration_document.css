@@ -1,6 +1,6 @@
 /* way_declaration_document.css - Personal style sheet for way declaration documents
  *
- *   “Summoned by a `link` tag in each way declaration document of the waycast,
+ *   “Summoned by a `link` element in each way declaration document of the waycast,
  *   this style sheet works on the client side — in the waycast reader’s Web browser —
  *   where it formats the presentation of the way declaration.”
  *     — http://reluk.ca/project/wayic/web/doc.task § configuration of a waycast
@@ -10,16 +10,16 @@
 
 
  /* Show the way clearly, using `wayic.read` as the Web presenter
-  * http://reluk.ca/project/wayic/read/manual.task § installation § personal style sheet
+  * http://reluk.ca/project/wayic/read/manual.task § basic use § personal style sheet
   * -------------------- */
     @import 'http://reluk.ca/project/wayic/read/readable.css';
- /* @import '/home/mike/var/deploy/wayic/test/read/readable.css'; TEST purposes only */
+ /* @import '/home/mike/var/deploy/test/wayic/read/readable.css'; TEST purposes only */
 
 
  /* Allow for informal notes
   * ------------------------ */
     @import 'http://reluk.ca/project/wayic/read/pre_note.css';
- /* @import '/home/mike/var/deploy/wayic/test/read/pre_note.css'; TEST */
+ /* @import '/home/mike/var/deploy/test/wayic/read/pre_note.css'; TEST */
 
 
     @namespace html 'http://www.w3.org/1999/xhtml';
