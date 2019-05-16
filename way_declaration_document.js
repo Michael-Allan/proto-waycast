@@ -3,7 +3,7 @@
   *   “Summoned by a `script` element in each way declaration document of the waycast,
   *   this program runs on the client side — in the waycast reader’s Web browser —
   *   where it manipulates the DOM of the way declaration.”
-  *     — http://reluk.ca/project/wayic/web/doc.task § configuration of a waycast
+  *     — http://reluk.ca/project/proto-wayic/web/doc.task § configuration of a waycast
   *
   *   This file has been dedicated to the public domain under a CC0 licence.  Further details at bottom.
   */
@@ -37,8 +37,8 @@ console.assert( (eval('var _tmp = null'), typeof _tmp === 'undefined'),
       */
     function run( relukDir )
     {
-        // http://reluk.ca/project/wayic/read/manual.task § basic use § personal presentation program
-        summonScript( relukDir + 'web/client_side.js', ( _Event ) =>
+        // http://reluk.ca/project/proto-wayic/read/manual.task § basic use § personal presentation program
+        summonScript( relukDir + 'proto-web/client_side.js', ( _Event ) =>
         {
             const CSide = window.ca_reluk_web_CSide; // [WA]
             if( CSide === undefined ) return; // Script failed
@@ -53,7 +53,7 @@ console.assert( (eval('var _tmp = null'), typeof _tmp === 'undefined'),
               );
 
           // -----
-            summonScript( relukDir + 'wayic/read/readable.js', ( _Event ) =>
+            summonScript( relukDir + 'proto-wayic/read/readable.js', ( _Event ) =>
             {
                 const WayDecDoc = window.ca_reluk_wayic_read_WayDecDoc; // [WA]
                 if( WayDecDoc === undefined ) return; // Script failed
@@ -65,10 +65,10 @@ console.assert( (eval('var _tmp = null'), typeof _tmp === 'undefined'),
 
 
 
-    /** Starts showing the way clearly using `wayic.read` as the Web presenter.
+    /** Starts showing the way clearly using `proto-wayic.read` as the Web presenter.
       *
       *     @param WayDecDoc (Object) The public interface of the presentation program.
-      *       http://reluk.ca/project/wayic/read/readable.js
+      *       http://reluk.ca/project/proto-wayic/read/readable.js
       */
     function start_layout( WayDecDoc )
     {

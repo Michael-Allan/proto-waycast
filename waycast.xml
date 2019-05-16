@@ -3,53 +3,53 @@
  ! waycast.xml - Waycast configuration file
  !
  !   “This file governs the overall interpretation of the waycast.”
- !     — http://reluk.ca/project/wayic/cast/doc.task § configuration of a waycast
+ !     — http://reluk.ca/project/proto-wayic/cast/doc.task § configuration of a waycast
  !
  !   This file has been dedicated to the public domain under a CC0 licence.  Further details at bottom.
  -->
 
     <!--
-     ! Show the way clearly, using `wayic.read` as the Web presenter
-     ! http://reluk.ca/project/wayic/read/manual.task § basic use § waycast configuration file
+     ! Show the way clearly, using `proto-wayic.read` as the Web presenter
+     ! http://reluk.ca/project/proto-wayic/read/manual.task § basic use § waycast configuration file
      ! - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <?xml-stylesheet type='application/xml' href='http://reluk.ca/project/wayic/read/waycast_configuration_file.xslt'?>
+    <?xml-stylesheet type='application/xml' href='http://reluk.ca/project/proto-wayic/read/waycast_configuration_file.xslt'?>
 <!--<?xml-stylesheet type='application/xml' href='_/waycast_configuration_file.xslt'?> For TEST purposes only -->
-<!--<?xml-stylesheet type='application/xml' href='http://reluk.ca/var/deploy/test/wayic/read/waycast_configuration_file.xslt'?> TEST -->
+<!--<?xml-stylesheet type='application/xml' href='http://reluk.ca/var/deploy/test/proto-wayic/read/waycast_configuration_file.xslt'?> TEST -->
 
 
 <configuration>
 
     <!--
-     ! Engagements.  http://reluk.ca/project/wayic/exec/doc.task#engagement
+     ! Engagements.  http://reluk.ca/project/proto-wayic/exec/doc.task#engagement
      ! - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <engagement tag='indexing'
            synopsis='Presenting a comprehensive, hyperlinked list of the waycaster’s engagements'
-            details='http://reluk.ca/project/wayic/read/project.task'
+            details='http://reluk.ca/project/proto-wayic/read/project.task'
               point='/wayic.xht#engaged_RWC'/>
 
     <engagement tag='indexing'
            synopsis='Using my engagement declarations to index the prototyping work'
-            details='http://reluk.ca/project/waycast/_/project.task'
+            details='http://reluk.ca/project/proto-waycast/_/project.task'
               point='/wayic.xht#engaged_RPD'/>
 
     <engagement tag='redacting'
            synopsis='Redacting this waycast'
-            details='http://reluk.ca/project/waycast/_/project.task#redacting'
+            details='http://reluk.ca/project/proto-waycast/_/project.task#redacting'
               point='/wayic.xht#engaged_RWC'/>
 
     <engagement tag='redacting'
-           synopsis='Redacting &lt;html:code>wayic.origins&lt;/html:code>'
-            details='http://reluk.ca/project/wayic/origins/project.task#redact'
+           synopsis='Redacting &lt;html:code>proto-wayic.origins&lt;/html:code>'
+            details='http://reluk.ca/project/proto-wayic/origins/project.task#redact'
               point='/wayic.xht#engaged_RPD'/>
 
     <engagement tag='redacting'
-           synopsis='Redacting &lt;html:code>wayic.intercast&lt;/html:code>'
-            details='http://reluk.ca/project/wayic/intercast/project.task#redact'
+           synopsis='Redacting &lt;html:code>proto-wayic.intercast&lt;/html:code>'
+            details='http://reluk.ca/project/proto-wayic/intercast/project.task#redact'
               point='/wayic.xht#engaged_RPD'/>
 
     <engagement tag='making'
-           synopsis='Making &lt;html:code>wayic.read&lt;/html:code>'
-            details='http://reluk.ca/project/wayic/read/project.task'
+           synopsis='Making &lt;html:code>proto-wayic.read&lt;/html:code>'
+            details='http://reluk.ca/project/proto-wayic/read/project.task'
               point='/wayic.xht#engaged_RWC'/>
 
     </configuration>

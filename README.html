@@ -33,13 +33,13 @@
     <h2>See also</h2>
     <ul>
         <li>
-            Lexical definitions of <a href='http://reluk.ca/project/wayic/way'>
-            ‘way’</a> and <a href='http://reluk.ca/project/wayic/cast/waycast'>
+            Lexical definitions of <a href='http://reluk.ca/project/proto-wayic/way'>
+            ‘way’</a> and <a href='http://reluk.ca/project/proto-wayic/cast/waycast'>
             ‘waycast’</a>
             </li>
         <li>
-            <a href='http://reluk.ca/project/wayic/'>
-            wayic.∗</a> - Small tools for a system of way formation
+            <a href='http://reluk.ca/project/proto-wayic/'>
+            proto-wayic.∗</a> - Small tools for a system of way formation
             </li>
         <li><a href='http://reluk.ca/project/genealogy.xht'>
             Genealogy</a> of projects ancestral to this waycast and wayic</li>
@@ -54,13 +54,13 @@
         </p>
     <ul>
         <li>
-            Readable copy of latest files at <a href='http://reluk.ca/project/waycast/'>reluk.ca</a>
+            Readable copy of latest files at <a href='http://reluk.ca/project/proto-waycast/'>reluk.ca</a>
             </li>
         <li>Browsable revision history at <a>GitHub</a> (top of this page) *</li>
         <li>
             Bare <code>.git</code> clones at
-            <a href=    'http://reluk.ca/var/repo/git/waycast.git'>reluk.ca</a> or
-            <a href='https://github.com/Michael-Allan/waycast.git'>GitHub</a> *
+            <a href=    'http://reluk.ca/var/repo/git/proto-waycast.git'>reluk.ca</a> or
+            <a href='https://github.com/Michael-Allan/proto-waycast.git'>GitHub</a> *
             </li>
         <li>Publication <a href='manual.task'>instructions</a> for the copying waycaster</li>
             <div style='font-size:0.85em; margin-top:1em; opacity:0.7'>
@@ -90,7 +90,7 @@
                 if( t.localName !== 'a' ) continue;
 
                 var maybeFinished = false;
-                if( !isCorrect_reluk && t.href === 'http://reluk.ca/project/waycast/' )
+                if( !isCorrect_reluk && t.href === 'http://reluk.ca/project/proto-waycast/' )
                 {
                   // Disable useless link, append text directions instead
                   // --------------------
@@ -110,7 +110,7 @@
                           // Remove deceptive text directions, enable link instead
                           // --------------------------------
                             text.replaceData( 0, text.length, ' *' ); // Leaving only the last bit
-                            t.setAttribute( 'href', 'https://github.com/Michael-Allan/waycast/' );
+                            t.setAttribute( 'href', 'https://github.com/Michael-Allan/proto-waycast/' );
                             isCorrect_github = maybeFinished = true;
                         }
                     }

@@ -3,23 +3,23 @@
  *   “Summoned by a `link` element in each way declaration document of the waycast,
  *   this style sheet works on the client side — in the waycast reader’s Web browser —
  *   where it formats the presentation of the way declaration.”
- *     — http://reluk.ca/project/wayic/web/doc.task § configuration of a waycast
+ *     — http://reluk.ca/project/proto-wayic/web/doc.task § configuration of a waycast
  *
  *   This file has been dedicated to the public domain under a CC0 licence.  Further details at bottom.
  */
 
 
- /* Show the way clearly, using `wayic.read` as the Web presenter
-  * http://reluk.ca/project/wayic/read/manual.task § basic use § personal style sheet
+ /* Show the way clearly, using `proto-wayic.read` as the Web presenter
+  * http://reluk.ca/project/proto-wayic/read/manual.task § basic use § personal style sheet
   * -------------------- */
-    @import 'http://reluk.ca/project/wayic/read/readable.css';
- /* @import '/home/mike/var/deploy/test/wayic/read/readable.css'; TEST purposes only */
+    @import 'http://reluk.ca/project/proto-wayic/read/readable.css';
+ /* @import '/home/mike/var/deploy/test/proto-wayic/read/readable.css'; TEST purposes only */
 
 
  /* Allow for informal notes
   * ------------------------ */
-    @import 'http://reluk.ca/project/wayic/read/pre_note.css';
- /* @import '/home/mike/var/deploy/test/wayic/read/pre_note.css'; TEST */
+    @import 'http://reluk.ca/project/proto-wayic/read/pre_note.css';
+ /* @import '/home/mike/var/deploy/test/proto-wayic/read/pre_note.css'; TEST */
 
 
     @namespace html 'http://www.w3.org/1999/xhtml';
