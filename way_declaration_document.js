@@ -38,7 +38,7 @@ console.assert( (eval('var _tmp = null'), typeof _tmp === 'undefined'),
     function run( relukDir )
     {
         // http://reluk.ca/project/proto-wayic/read/manual.task § basic use § personal presentation program
-        summonScript( relukDir + 'proto-web/client_side.js', ( _Event ) =>
+        summonScript( relukDir + 'proto-Web/client_side.js', ( _Event ) =>
         {
             const CSide = window.ca_reluk_web_CSide; // [WA]
             if( CSide === undefined ) return; // Script failed
